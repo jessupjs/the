@@ -2,8 +2,8 @@
 
 Github: https://github.com/jessupjs/the
 
-// Routes
- + /leapmotion
+Routes:
+ + /leapmotion/:testtype
 
 ### Install
 1. Make sure you have node.js installed.
