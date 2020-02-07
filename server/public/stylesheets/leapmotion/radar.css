@@ -1,0 +1,257 @@
+/* `````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+    RADARVIS
+ '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' */
+
+/* svg */
+svg {
+    transform: translate3d(0, 0, 0);
+}
+
+/* mainAxisLine */
+.mainAxisLine {
+    stroke: rgba(0, 0, 0, 0.5);
+    stroke-width: 1px;
+}
+
+.domainLabel {
+    alignment-baseline: middle;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    letter-spacing: 0.2rem;
+    text-anchor: middle
+}
+
+/* rotate */
+.symbol {
+    alignment-baseline: middle;
+    cursor: pointer;
+    fill: rgba(0, 0, 0, 0.75);
+    font-family: sans-serif;
+    font-size: 30px;
+    text-anchor: middle;
+}
+
+/* symbolText */
+.symbolText {
+    cursor: pointer;
+    fill: rgba(0, 0, 0, 0.5);
+    font-family: sans-serif;
+    font-size: 10px;
+    font-weight: lighter;
+    letter-spacing: 0.1rem;
+    text-anchor: middle;
+}
+
+/* navText */
+.navText {
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    letter-spacing: 0.2rem;
+    text-anchor: middle;
+}
+
+.navText textPath {
+    alignment-baseline: middle;
+    fill: rgba(255, 255, 255, 1);
+}
+
+/* resText*/
+.resText {
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    letter-spacing: 0.1rem;
+    text-anchor: middle;
+}
+
+.resText textPath {
+    alignment-baseline: middle;
+    fill: rgba(0, 0, 0, 1);
+}
+
+/* timeG */
+.grabLine {
+    stroke: rgba(255, 0, 0, 0);
+    stroke-width: 10px;
+}
+
+.timeLineBack {
+    pointer-events: none;
+    stroke: rgba(255, 201, 7, 0);
+    stroke-width: 3px;
+}
+
+.timeLineBackHov {
+    stroke: rgba(255, 201, 7, 0.8);
+}
+
+.timeLine {
+    stroke: rgba(0, 0, 0, 1);
+    stroke-width: 0.5px;
+}
+
+.timeLineHov, .timeLineSel {
+    stroke-width: 1.5px;
+}
+
+.timeText {
+    alignment-baseline: middle;
+    cursor: default;
+    font-family: sans-serif;
+    font-size: 10px;
+    font-weight: lighter;
+    letter-spacing: 0.1rem;
+    text-anchor: end;
+}
+
+.timeTextBold {
+    font-weight: bolder;
+}
+
+.yearDot {
+    fill: rgba(255, 0, 0, 0);
+}
+
+.selYearDot {
+    fill: rgba(255, 0, 0, 1);
+}
+
+.timesetLabel {
+    alignment-baseline: middle;
+    cursor: default;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+    text-anchor: middle;
+}
+
+/* countryG */
+.countryListText {
+    alignment-baseline: middle;
+    cursor: default;
+    font-family: sans-serif;
+    font-size: 10px;
+    font-weight: lighter;
+    letter-spacing: 0.1rem;
+    text-anchor: start;
+}
+
+.countryListTextHov, .countryListTextSel {
+    font-weight: bolder;
+}
+
+.grabCountryLine {
+    stroke: rgba(255, 0, 0, 0);
+    stroke-width: 13px;
+}
+
+.countryLineBack {
+    pointer-events: none;
+    stroke: rgba(255, 201, 7, 0);
+    stroke-width: 3px;
+}
+
+.countryLineBackHov {
+    stroke: rgba(255, 201, 7, 1);
+}
+
+.countryDot {
+    fill: rgba(255, 0, 0, 0);
+}
+
+.selCountryDot {
+    fill: rgba(255, 0, 0, 1);
+}
+
+/* area */
+.actualArea {
+    fill: rgba(0, 0, 0, 0.7);
+}
+
+.evenArea {
+    fill: rgba(118, 54, 39, 0.35);
+}
+
+.evenAreaAfrica {
+    fill: rgba(60, 118, 114, 0.35);
+}
+
+/* nodeCirc */
+.nodeCirc {
+    fill-opacity: 0;
+}
+
+.nodeCircOn {
+    stroke: rgba(255, 255, 255, 1);
+    stroke-width: 0.2px;
+    transition: stroke-opacity 250ms ease-out;
+}
+
+.countryCircHov, .africaCircHov, .worldCircHov, .populationCircHov, .foodproductionCircHov, .tradevalueCircHov, .emissionsCircHov {
+    fill: rgba(255, 201, 7, 1);
+    fill-opacity: 1;
+    stroke-width: 0.4px;
+    transition: fill-opacity, stroke 250ms ease-out;
+}
+
+.countryCircSel, .africaCircSel, .worldCircSel {
+    fill: rgba(255, 0, 0, 1);
+    fill-opacity: 1;
+    stroke-width: 0.4px;
+    transition: fill-opacity, stroke 250ms ease-out;
+}
+
+.repResText {
+    fill: rgba(255, 255, 255, 1);
+    alignment-baseline: middle;
+    cursor: default;
+    font-family: sans-serif;
+    font-size: 10px;
+    font-weight: lighter;
+    letter-spacing: 0.1rem;
+    text-anchor: middle;
+}
+
+/* legendPath */
+
+.countryLegendPath {
+    fill: rgba(0, 0, 0, 0.7);
+}
+
+.worldLegendPath {
+    fill: rgba(118, 54, 39, 0.35);
+}
+
+.africaLegendPath {
+    fill: rgba(60, 118, 114, 0.35);
+}
+
+.legendLabel {
+    alignment-baseline: middle;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: lighter;
+    letter-spacing: 0.1rem;
+}
+
+.legendSubLabel {
+    alignment-baseline: middle;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 11px;
+    font-weight: lighter;
+    fill: rgba(0, 0, 0, 0.8);
+    letter-spacing: 0.1rem;
+}
+
+.legendYear {
+    font-weight: bolder;
+    letter-spacing: 0.4rem;
+}
+

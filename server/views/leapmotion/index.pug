@@ -1,0 +1,27 @@
+extends ../layout
+
+block styles
+    link(rel='stylesheet', href='/stylesheets/reset.css')
+    link(rel='stylesheet', href='/stylesheets/leapmotion/index.css')
+    link(rel='stylesheet', href='/stylesheets/leapmotion/radar.css')
+
+block content
+    main
+    header(id="topBar")
+        div(id="topTitle")
+            h1 Leap Motion Testing
+        nav(id="topNav")
+            ul
+                li
+                    a Mouse
+                li
+                    a Touch
+                li
+                    a Motion
+    div(id="slide1", class="slide")
+        div(id="radarVis")
+
+block scripts
+    script(src="https://d3js.org/d3.v5.min.js")
+    script(src="javascripts/leapmotion/radar.js")
+    script(src="javascripts/leapmotion/main.js")

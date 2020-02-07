@@ -1,0 +1,55 @@
+/* `````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+    INDEX
+ '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' */
+
+/* slide */
+.slide {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+}
+
+/* topBar */
+#topBar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+}
+
+/* topTitle */
+#topTitle {
+    margin: 2vh 2.5%;
+
+    font-family: sans-serif;
+}
+
+#topTitle h1 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+/* topNav */
+#topNav {
+    margin: 2vh 2.5%;
+
+    font-family: sans-serif;
+}
+
+#topNav ul {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#topNav li {
+    margin: 0 0 0 20px;
+}
+
+#topNav a {
+    font-size: 15px;
+    font-weight: 100;
+}
