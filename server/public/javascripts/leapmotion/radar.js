@@ -529,24 +529,46 @@ class Mod3Main {
 
         // Add events to TIMEGs
         vis.timeLabelG
-            .on("touchstart", touch)
-            .on("touchmove", touch)
-            .on("touchend", touch);
-        function touch() {
+            .on("touchstart", timeTouch)
+            .on("touchmove", timeTouch)
+            .on("touchend", timeTouch);
+        function timeTouch() {
             if (typeof d3.event.cancelable !== 'boolean' || d3.event.cancelable) {
-                console.log('G');
                 d3.event.preventDefault();
-            } else {
-                console.log('B')
             }
+            // Get located
             const myLocation = d3.event.changedTouches[0];
             const realTarget = document.elementFromPoint(myLocation.clientX, myLocation.clientY);
             const targetParent = realTarget ? d3.select(realTarget.parentElement) : null;
             if (targetParent && targetParent.attr('class') === 'timeG') {
+                // Clear
                 d3.select('.timeLineBackHov')
                     .classed('timeLineBackHov', false);
+                d3.select('.timeLineSel')
+                    .classed('timeLineBackHov', false);
+                d3.select('.selYearDot')
+                    .classed('selYearDot', false);
+                // Add styles
                 targetParent.select('.timeLineBack')
                     .classed('timeLineBackHov', true);
+                targetParent.select('.timeLineSel')
+                    .classed('timeLineSel', true);
+                vis.selYearG.select('.yearDot')
+                    .classed('selYearDot', true);
+                // Update sel year
+                targetParent.each(d => {
+                    vis.hovYear = d;
+                    vis.selYear = d;
+                });
+                vis.selYearG
+                    .transition()
+                    .style('transform', `rotate(${vis.yearAngleScale(vis.selYear)}deg) 
+                        translateY(${vis.mainGraphExt * 1.24}px)`);
+                // Update legend year
+                vis.legendG.select('.legendYear')
+                    .text(vis.selYear ? vis.selYear : vis.hovYear);
+                // Wrangle vis
+                vis.wrangleVis();
             }
         }
 
@@ -1409,6 +1431,48 @@ class Mod3Main {
                     }),
                 exit => exit.remove()
             );
+
+        // Add events to COUNTRYGs
+        vis.countryLabelG
+            .on("touchstart", countryTouch)
+            .on("touchmove", countryTouch)
+            .on("touchend", countryTouch);
+        function countryTouch() {
+            if (typeof d3.event.cancelable !== 'boolean' || d3.event.cancelable) {
+                d3.event.preventDefault();
+            }
+            // Get located
+            const myLocation = d3.event.changedTouches[0];
+            const realTarget = document.elementFromPoint(myLocation.clientX, myLocation.clientY);
+            const targetParent = realTarget ? d3.select(realTarget.parentElement) : null;
+            if (targetParent && targetParent.attr('class') === 'countryG') {
+                // Clear
+                d3.select('.countryLineBackHov')
+                    .classed('countryLineBackHov', false);
+                d3.select('.countryListTextHov')
+                    .classed('countryListTextHov', false);
+                // Add styles
+                targetParent.select('.countryLineBack')
+                    .classed('countryLineBackHov', true);
+                targetParent.select('.countryListText')
+                    .classed('countryListTextHov', true);
+                // Update sel year
+                targetParent.each(d => {
+                    vis.hovCountry = d.country;
+                    vis.selCountry = d.country;
+                    vis.selIndex = d.index;
+                });
+                vis.selCountryG
+                    .transition()
+                    .style('transform', `rotate(${vis.countryAngleScale(vis.selIndex)}deg) 
+                                        translateY(${vis.mainGraphExt * 1.24}px)`);
+                vis.selCountryG.select('.countryDot')
+                    .classed('selCountryDot', true);
+                // Update legend
+                // Wrangle vis
+                vis.wrangleVis();
+            }
+        }
 
     }
 
