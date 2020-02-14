@@ -406,6 +406,250 @@ class Mod3Main {
             .style('transform', `translateY(${-vis.mainGraphExt * 0.12}px)`)
             .text('click to sort');
 
+        /* `````````````````````````````````\```````````````````````\
+            LEAP MOTION    START            |                       |
+         ``````````````````````````````````/``````````````````````*/
+
+        var scaleFingerDirection = d3.scaleLinear()
+            .domain([0, 90])
+            .range([41, 0]);
+
+        var scaleLeftFingerDirection = d3.scaleLinear()
+            .domain([-1, 1])
+            .range([0, 101]);
+
+        var index_to_year = d3.scaleLinear()
+            .domain([0, 101])
+            .range([1963, 2063]);
+
+        var index_l, index_r;
+
+        Leap.loop({
+
+            // frame callback is run before individual frame components
+            frame: function(frame){
+
+                //console.log(frame.pointables)
+            },
+
+            // hand callbacks are run once for each hand in the frame
+            hand: function(hand){
+
+                // LEFT hand INDEX up
+                if(hand.indexFinger.extended && hand.type == 'left'
+                    && hand.thumb.extended == false
+                    && hand.middleFinger.extended == false
+                    && hand.ringFinger.extended == false
+                    && hand.pinky.extended == false){
+
+                    var select_all_lineBack, select_all_line, selected_back, selected_line;
+
+                    for (var i=0; i < (document.querySelectorAll(".timeG")).length; i++){
+
+                        index_l = Math.round(scaleLeftFingerDirection(hand.indexFinger.direction[1]))
+
+                        if (i != index_l){
+                            select_all_lineBack = document.querySelectorAll(".timeLineBack")[i]
+                            select_all_lineBack.setAttribute('class', 'timeLineBack')
+
+                            select_all_line = document.querySelectorAll(".timeLine")[i]
+                            select_all_line.setAttribute('class', 'timeLine')
+                        }
+
+                        //var selected_main= document.querySelectorAll(".timeG")[index_l]
+
+                        selected_back = document.querySelectorAll(".timeLineBack")[index_l]
+                        selected_back.setAttribute('class', 'timeLineBack timeLineBackHov')
+
+                        selected_line = document.querySelectorAll(".timeLine")[index_l]
+                        selected_line.setAttribute('class', 'timeLine timeLineHov')
+
+                        vis.hovYear = Math.round(index_to_year(index_l));
+                        //vis.wrangleVis();
+                    }
+                }
+                // RIGHT hand ROTATION
+                if(hand.indexFinger.extended && hand.type == 'left'
+                    && hand.thumb.extended
+                    && hand.middleFinger.extended){
+
+                    // window.TO_RAD = Math.PI / 180;
+                    // window.TO_DEG = 2 / TO_RAD;
+
+                    var hand_position = Math.round(hand.roll())
+
+                    console.log(hand_position)
+
+                    if (hand_position < 0) {
+                        vis.rotateDeg = 90;
+                        vis.hovFilter = vis.quarterData[3]
+                        vis.wrangleVis()
+                    }
+                    if (hand_position == 0) {
+                        vis.rotateDeg = 0;
+                        vis.hovFilter = vis.quarterData[0]
+                        vis.wrangleVis()
+                    }
+                    if (hand_position == 1) {
+                        vis.rotateDeg = -90;
+                        vis.hovFilter = vis.quarterData[1]
+                        vis.wrangleVis()
+                    }
+                    if (hand_position == 2) {
+                        vis.rotateDeg = -180;
+                        vis.hovFilter = vis.quarterData[2]
+                        vis.wrangleVis()
+                    }
+                    vis.rotateQuarterG
+                        .transition()
+                        .duration(200)
+                        .style('transform', `rotate(${vis.rotateDeg}deg)`);
+                    vis.compChart
+                        .transition()
+                        .duration(200)
+                        .style('transform', `rotate(${vis.rotateDeg}deg)`);
+                    vis.handleG
+                        .transition()
+                        .duration(200)
+                        .style('transform', `rotate(${vis.rotateDeg}deg)`);
+                }
+
+                // RIGHT hand INDEX up
+                if(hand.indexFinger.extended && hand.type == 'right'
+                    && hand.thumb.extended == false
+                    && hand.middleFinger.extended == false
+                    && hand.ringFinger.extended == false
+                    && hand.pinky.extended == false){
+
+                    var hand_position = hand._translation[1]
+
+                    if (hand_position > 90){
+                        hand_position = 90
+                    }
+
+                    if (hand_position < 0){
+                        hand_position = 0
+                    }
+
+                    index_r = Math.round(scaleFingerDirection(hand_position))
+
+                    var select_all_lineBack, select_all_line, selected_back, selected_line;
+
+                    for (var i=0; i < 42; i++){
+
+                        if (i != index_r){
+
+                            select_all_lineBack = document.querySelectorAll(".countryListText")[i]
+                            select_all_lineBack.setAttribute('class', 'countryListText')
+
+                            select_all_line = document.querySelectorAll(".countryLineBack")[i]
+                            select_all_line.setAttribute('class', 'countryLineBack')
+                        }
+
+                        selected_back = document.querySelectorAll(".countryListText")[index_r]
+                        selected_back.setAttribute('class', 'countryListText countryListTextSel')
+
+                        selected_line = document.querySelectorAll(".countryLineBack")[index_r]
+                        selected_line.setAttribute('class', 'countryLineBack countryLineBackHov')
+
+                    }
+                }
+                // RIGHT hand INDEX down
+                if(hand.indexFinger.extended==false && hand.type == 'right'
+                    && hand.thumb.extended == false
+                    && hand.middleFinger.extended == false
+                    && hand.ringFinger.extended == false
+                    && hand.pinky.extended == false){
+
+                    if(typeof vis.countryData[index_r] !== "undefined"){
+
+                        var e = vis.countryData[index_r]
+
+                        d3.select('.selCountryDot')
+                            .classed('selCountryDot', false);
+                        d3.select('.countryListTextSel')
+                            .classed('countryListTextSel', false);
+
+                        // Set
+                        vis.hovCountry = e.country;
+                        vis.selCountry = e.country;
+                        vis.selIndex = e.index;
+
+                        // Style
+                        vis.selCountryG
+
+                            .style('transform', `rotate(${vis.countryAngleScale(e.index)}deg) 
+                        translateY(${vis.mainGraphExt * 1.24}px)`);
+                        vis.selCountryG.select('.countryDot')
+                            .classed('selCountryDot', true);
+
+                        // Wrangle
+                        vis.wrangleVis();
+
+                    }
+                }
+
+                // LEFT hand INDEX down
+                if(hand.indexFinger.extended==false && hand.type == 'left'
+                    && hand.thumb.extended == false
+                    && hand.middleFinger.extended == false
+                    && hand.ringFinger.extended == false
+                    && hand.pinky.extended == false){
+
+                    if(typeof vis.yearData[index_l] !== "undefined"){
+
+                        var e = vis.yearData[index_l]
+
+                        // Style
+                        vis.selCountryG
+                            .transition()
+                            .style('transform', `rotate(${vis.countryAngleScale(e.index)}deg) 
+                        translateY(${vis.mainGraphExt * 1.24}px)`);
+                    }
+                }
+
+                // LEFT hand ALL up
+                if(hand.indexFinger.extended==true && hand.type == 'right'
+                    && hand.thumb.extended == true
+                    && hand.middleFinger.extended == true
+                    && hand.ringFinger.extended ==  true
+                    && hand.pinky.extended == true){
+
+                    var hand_z_position = hand._translation[2]
+                    var areas = d3.selectAll(".area")._groups[0]
+                    var legend = d3.selectAll(".geoG")._groups[0]
+
+                    if (hand_z_position > -30){
+                        areas[2].style.visibility = "visible";
+                        legend[0].style.visibility = "visible";
+                        vis.areaSel('country', true);
+                    }
+
+                    if (hand_z_position > -100 && hand_z_position < -30){
+                        areas[2].style.visibility = "hidden";
+                        areas[1].style.visibility = "visible";
+
+                        legend[0].style.visibility = "hidden";
+                        legend[1].style.visibility = "visible";
+
+                        vis.areaSel('africa', true);
+                    }
+
+                    if (hand_z_position < -100){
+                        areas[1].style.visibility = "hidden";
+                        areas[2].style.visibility = "hidden";
+
+                        legend[0].style.visibility = "hidden";
+                        legend[1].style.visibility = "hidden";
+
+                        vis.areaSel('africa', false);
+                    }
+                }
+            }
+        });
+        /* `````````````````````````````````\```````````````````````\
+            LEAP MOTION    END              |                       |
+         ``````````````````````````````````/``````````````````````*/
 
         // Config labelOffset
         vis.labelOffset = 1.275;
