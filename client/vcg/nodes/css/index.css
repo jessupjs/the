@@ -1,0 +1,129 @@
+/* `````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+    INDEX
+ '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' */
+
+#topBar {
+    position: fixed;
+}
+
+#topLogo {
+    height: 22px;
+    margin: 11px;
+}
+
+main {
+    padding: 25px 0 50px 0;
+}
+
+/* slide */
+.slide {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+/* display */
+.display {
+    align-items: flex-end;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.display h1 {
+    margin: 10vh 0 2.5vh 0;
+
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* nodes */
+.nodes {
+    border: 0.2px solid rgba(0, 0, 0, 1);
+}
+
+/* node */
+.node {
+    cursor: pointer;
+}
+
+.nodeText {
+    alignment-baseline: middle;
+    font-family: sans-serif;
+    font-size: 11px;
+    text-anchor: middle;
+    transform: translateY(1px);
+}
+
+.nodeTextMd {
+    font-size: 22px;
+    font-weight: 100;
+    transform: translateY(0);
+}
+
+.nodeTextLg {
+    font-size: 28px;
+    font-weight: 100;
+    transform: translateY(2px);
+}
+
+.nodeCirc1 {
+    fill: rgba(255, 255, 255, 1);
+}
+
+.nodeCircHL {
+    fill: none;
+}
+
+.nodeCircHLSource {
+    stroke: rgb(0, 0, 255);
+}
+
+.nodeCircHLTarget {
+    fill: rgb(0, 0, 255);
+}
+
+.nodeCirc2 {
+    fill: rgb(255, 131, 92);
+}
+
+/* link */
+.link {
+    fill: none;
+    stroke: rgba(0, 0, 0, 1);
+    stroke-width: 0.5px;
+}
+
+/* invis */
+.invis {
+    visibility: hidden;
+}
+
+/* removeNodeG */
+.removeNodeG {
+    cursor: pointer;
+}
+
+.removeNodeCirc {
+    fill: rgba(255, 255, 255, 1);
+    stroke: rgba(0, 0, 0, 1);
+    stroke-width: 0.5px;
+}
+
+/* newNodeG */
+.newNodeG {
+    cursor: pointer;
+}
+
+/* addLinkG */
+.addLinkG {
+    cursor: pointer;
+}
+
+/* mockLine */
+.mockLine {
+    fill: none;
+    stroke: rgb(0, 0, 255);
+    stroke-width: 0.5px;
+    stroke-dasharray: 3;
+}
