@@ -148,9 +148,9 @@ class T2t_1 {
         let backwards = 0;
         let selfs = 0;
         vis.displayData_links.forEach(d => {
-            if (+d.source > +d.target) {
+            if (+d.source < +d.target) {
                 forwards++;
-            } else if (+d.source < +d.target) {
+            } else if (+d.source > +d.target) {
                 backwards++;
             } else {
                 selfs++;
