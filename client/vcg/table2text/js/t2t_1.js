@@ -106,6 +106,10 @@ class T2t_1 {
         // Get displayData copy
         vis.displayData_nodes = JSON.parse(JSON.stringify(vis.data.states));
         vis.displayData_links = JSON.parse(JSON.stringify(vis.data.edges));
+        console.log('////////////// DISPLAY DATA :: nodes')
+        console.log(vis.displayData_nodes)
+        console.log('////////////// DISPLAY DATA :: links')
+        console.log(vis.displayData_links)
 
         // Wrangle
         vis.wrangleData();
@@ -138,6 +142,27 @@ class T2t_1 {
             const targetCt = target ? target.value : 0;
             d.tot_occurrences = sourceCt + targetCt;
         });
+
+        // Const forward and backward links
+        let forwards = 0;
+        let backwards = 0;
+        let selfs = 0;
+        vis.displayData_links.forEach(d => {
+            if (+d.source > +d.target) {
+                forwards++;
+            } else if (+d.source < +d.target) {
+                backwards++;
+            } else {
+                selfs++;
+            }
+        });
+
+        console.log('////////////// COUNTS');
+        console.log('Forward links: ' + forwards);
+        console.log('Backward links: ' + backwards);
+        console.log('Looping (self) links: ' + selfs);
+
+
 
         // Update color and stroke scales
         vis.colorScale.domain(d3.extent(vis.displayData_nodes, d => d.tot_occurrences));
