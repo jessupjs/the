@@ -1,0 +1,92 @@
+/* `````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+    INDEX
+ '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' */
+
+#topBar {
+    position: fixed;
+}
+
+#topLogo {
+    height: 22px;
+    margin: 11px;
+}
+
+main {
+    padding: 25px 0 50px 0;
+}
+
+/* slide */
+.slide {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+/* display */
+.display {
+    align-items: flex-end;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.display h1 {
+    margin: 70px 0 20px 0;
+
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* container */
+.container {
+    border: 0.2px solid rgba(0, 0, 0, 1);
+}
+
+/* lineP2 */
+.lineP2 {
+    fill: none;
+    stroke: rgba(0, 0, 0, 1);
+    stroke-width: 0.2px;
+}
+
+/* node */
+.node {
+    cursor: pointer;
+}
+
+.nodeText {
+    alignment-baseline: middle;
+    font-family: sans-serif;
+    font-size: 9px;
+    font-weight: 300;
+    text-anchor: middle;
+    transform: translateY(1px);
+}
+
+.nodeCirc1 {
+    fill: rgba(255, 255, 255, 1);
+}
+
+.nodeCircHL {
+    fill: none;
+}
+
+.nodeCircHLSource {
+    stroke: rgb(0, 0, 255);
+}
+
+.nodeCircHLTarget {
+    fill: rgb(0, 0, 255);
+}
+
+.nodeCirc2 {
+    /* fill: rgb(255, 131, 92); */
+}
+
+/* link */
+.link {
+    fill: none;
+    stroke: rgba(0, 0, 0, 0.3);
+    /* stroke-width: 0.5px; */
+}

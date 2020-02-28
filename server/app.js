@@ -28,7 +28,8 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/leapmotion', leapmotionRouter);
 app.use('/vcg/nodes', express.static(path.join(__dirname, '../client/vcg/nodes')));
-//app.use('/vcg', vcgRouter);
+app.use('/vcg/table2text', express.static(path.join(__dirname, '../client/vcg/table2text')));
+//app.use('/vcg', vcgRouter); TODO
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
