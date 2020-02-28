@@ -94,7 +94,7 @@ class T2t_1 {
 
         // Define colorScale
         vis.colorScale = d3.scaleLinear()
-            .range(['rgb(255,231,222)', 'rgb(255,110,4)']);
+            .range(['rgb(228, 228, 228)', 'rgb(0, 0, 0)']);
 
         // Define strokeScale
         vis.strokeScale = d3.scaleLinear()
@@ -149,10 +149,13 @@ class T2t_1 {
         let selfs = 0;
         vis.displayData_links.forEach(d => {
             if (+d.source < +d.target) {
+                d.direction = 'fwd';
                 forwards++;
             } else if (+d.source > +d.target) {
+                d.direction = 'bwd';
                 backwards++;
             } else {
+                d.direction = 'self';
                 selfs++;
             }
         });
@@ -237,6 +240,13 @@ class T2t_1 {
                         const linkCoords = vis.getLinkCoords(d);
                         // Draw
                         node.attr('d', vis.linkLine(linkCoords))
+                            .attr('stroke', () => {
+                                if (d.direction === 'fwd') {
+                                    return 'rgba(0, 0, 255, 0.4)';
+                                } else if (d.direction === 'bwd') {
+                                    return 'rgba(255, 32, 0, 0.6)';
+                                }
+                            })
                             .attr('stroke-width', vis.strokeScale(d.weight));
                     }),
             );
