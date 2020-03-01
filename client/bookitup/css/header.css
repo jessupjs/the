@@ -10,13 +10,13 @@
 
 /* side */
 .side {
+    background-color: rgba(0, 0, 0, 0.9);
     margin: 10px 20px;
 }
 
 .side h1 {
     padding: 0 5px;
 
-    background-color: rgba(0, 0, 0, 0.9);
     color: rgba(255, 255, 255, 1);
     font-family: 'Roboto Mono', monospace;
     font-size: 21px;
@@ -25,6 +25,7 @@
     text-transform: uppercase;
 }
 
+/* sortSelect */
 #sortSelect {
     align-items: center;
     background-color: rgba(255, 255, 255, 1);
@@ -32,3 +33,5 @@
     display: flex;
     height: 20px;
 }
+
+

@@ -15,7 +15,7 @@ class Radial {
 
         // Config
         vis.w = 375;
-        vis.h = 315;
+        vis.h = 375;
 
         // Get container and config
         vis.svg = d3.select(`#${vis.parent}`)
@@ -35,6 +35,19 @@ class Radial {
         // Config radialG
         vis.innerRadius = Math.round(vis.gW / 2 * 0.45);
         vis.outerRadius = Math.round(vis.gW / 2 * 0.8);
+
+        // Build controlG
+        vis.controlG = vis.g.append('g')
+            .attr('class', 'controlG')
+            .style('transform', `translate(${vis.gW / 2}px, ${vis.gH / 2}px)`);
+
+        // Add handle
+        vis.handleG = vis.controlG.append('g')
+            .attr('class', 'controlG');
+        vis.handleG.append('circle')
+            .attr('class', 'handleCirc')
+            .attr('r', `${vis.outerRadius * 1.05}`);
+        vis.handleHandle();
 
         // Build radialG
         vis.radialG = vis.g.append('g')
@@ -301,6 +314,18 @@ class Radial {
                 g.selectAll('.geoNode')
                     .classed('geoNodeSel', true);
             })
+    }
+
+    handleHandle() {
+        // Get this vis
+        const vis = this;
+
+        // Handle Listeners
+        vis.handleG.on('mouseover', hover);
+
+        function hover() {
+        }
+
     }
 
     sortIt(by) {
