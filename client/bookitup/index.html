@@ -19,7 +19,15 @@
 <body>
 
 <header id="topBar">
-    <h1>Book It Up</h1>
+    <div id="lSide" class="side">
+        <h1>Book It Up</h1>
+    </div>
+    <div id="rSide" class="side">
+        <select id="sortSelect" onchange="sortIt(this)">
+            <option value="abc">abc</option>
+            <option value="123">123</option>
+        </select>
+    </div>
 </header>
 <div id="slide1" class="slide">
     <div id="mobileScreen">
