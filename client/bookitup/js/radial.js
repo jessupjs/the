@@ -171,7 +171,7 @@ class Radial {
 
         // Draw geos
         vis.geosG.selectAll('.geoG')
-            .data(vis.bookData)
+            .data(vis.bookData, d => d.key)
             .join(
                 // ENTER
                 enter => enter
@@ -258,7 +258,7 @@ class Radial {
                             .attr('d', vis.geoMaker(coords));
                         // Draw node circles
                         genres.forEach(g => {
-                            geoG.select('.geoNode')
+                            geoG.selectAll('.geoNode')
                                 .attr('cx', g.x)
                                 .attr('cy', g.y)
                         });
@@ -282,24 +282,25 @@ class Radial {
                         }
 
                     })
-            ).on('mouseover', function (d) {
-            // Clear selections
-            vis.g.select('.geoPathSel')
-                .classed('geoPathSel', false);
-            vis.g.select('.geoCircSel')
-                .classed('geoCircSel', false);
-            vis.g.selectAll('.geoNodeSel')
-                .classed('geoNodeSel', false);
-            // Define this
-            const g = d3.select(this);
-            // Show path and outline circ
-            g.select('.geoPath')
-                .classed('geoPathSel', true);
-            g.select('.geoCirc')
-                .classed('geoCircSel', true);
-            g.selectAll('.geoNode')
-                .classed('geoNodeSel', true);
-        })
+            )
+            .on('mouseover', function (d) {
+                // Clear selections
+                vis.g.select('.geoPathSel')
+                    .classed('geoPathSel', false);
+                vis.g.select('.geoCircSel')
+                    .classed('geoCircSel', false);
+                vis.g.selectAll('.geoNodeSel')
+                    .classed('geoNodeSel', false);
+                // Define this
+                const g = d3.select(this);
+                // Show path and outline circ
+                g.select('.geoPath')
+                    .classed('geoPathSel', true);
+                g.select('.geoCirc')
+                    .classed('geoCircSel', true);
+                g.selectAll('.geoNode')
+                    .classed('geoNodeSel', true);
+            })
     }
 
     sortIt(by) {
