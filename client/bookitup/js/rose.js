@@ -33,8 +33,8 @@ class Rose {
             .style('transform', `translate(${vis.gMargin.left}px ${vis.gMargin.right}px`);
 
         // Config radialG
-        vis.innerRadius = Math.round(vis.gW / 2 * 0.45);
-        vis.outerRadius = Math.round(vis.gW / 2 * 0.8);
+        vis.innerRadius = Math.round(vis.gW / 2 * 0.3);
+        vis.outerRadius = Math.round(vis.gW / 2 * 0.6);
 
         // Build controlG
         vis.controlG = vis.g.append('g')
@@ -46,7 +46,7 @@ class Rose {
             .attr('class', 'controlG');
         vis.handleG.append('circle')
             .attr('class', 'handleCirc')
-            .attr('r', `${vis.outerRadius * 1.05}`);
+            .attr('r', `${vis.gW / 2 * 0.85}`);
         vis.handleHandle();
 
         // Build radialG
@@ -59,9 +59,9 @@ class Rose {
             .attr('class', 'rLabelG');
 
         // Append circ
-        vis.rLabelG.append('circle')
+        /*vis.rLabelG.append('circle')
             .attr('class', 'rLabelCirc')
-            .attr('r', vis.innerRadius);
+            .attr('r', vis.innerRadius);*/
 
         // Init xScale
         vis.xScale = d3.scaleLinear()

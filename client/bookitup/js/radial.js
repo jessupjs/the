@@ -46,7 +46,7 @@ class Radial {
             .attr('class', 'controlG');
         vis.handleG.append('circle')
             .attr('class', 'handleCirc')
-            .attr('r', `${vis.outerRadius * 1.05}`);
+            .attr('r', `${vis.gW / 2 * 0.85}`);
         vis.handleHandle();
 
         // Build radialG
