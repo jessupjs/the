@@ -3,54 +3,116 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Loop - Leap</title>
 
-    <script src="lib/leap-1.0.0.js"></script>
-
-    <script>
-
-      // to make working with angles easy
-      window.TO_RAD = Math.PI / 180;
-      window.TO_DEG = 1 / TO_RAD;
-
-      Leap.loop({
-
-        // frame callback is run before individual frame components
-        frame: function(frame){
-          out.innerHTML = ''
-        },
-
-        // hand callbacks are run once for each hand in the frame
-        hand: function(hand){
-          out.innerHTML += ' &nbsp;roll: ' + Math.round(hand.roll() * TO_DEG) + '°<br/>'
-
-          
-
-          if (Math.round(hand.roll() * TO_DEG) < - 170){
-     
-            document.getElementById("link").innerHTML = "NEXT"
-
-          }
-        }
-      });
-
-    </script>
-
-    <style>
+        <style>
       body {
         line-height: 2em;
-        font-size: 2em;
+        font-size: 1.5em;
         font-family: Helvetica;
       }
+     
     </style>
 
   </head>
 
   <body>
 
-    <p>Rotate one or both of your hands. Your taks is to reach -170°</p>
+     <p>Test the rotation with both of your hands. <br> Bring the orange arc with your left hand to the same position where the blue arc is. </p>
+
+    <script src="lib/leap-1.0.0.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+
+    var width = 800,
+        height = 400;
+
+    var convertValue = function (value) {
+        return value * .75 * 2 * Math.PI;
+    }
+
+    var arc = d3.svg.arc()
+        .innerRadius(100)
+        .outerRadius(160)
+        .startAngle(0);
+
+    var svg = d3.select("body").append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .append("g")
+        .attr("transform", "translate(" + width / 4 + "," + height / 2 + ")")
+
+        svg 
+        .append('image')
+    //  .attr('d',path)
+        .attr('xlink:href','img/img.png')
+        .attr('height', '350')
+        .attr('width', '350')
+        .attr("transform", "translate(" + 250 + "," + -170 + ")")
+
+    var big_background = svg.append("path")
+        .datum({ endAngle: convertValue(2)})
+        .style("fill", "#f3f4f5")
+        .attr("d", arc);
+
+    var big_gain = svg.append("path")
+        .datum({ endAngle: 1.6 })
+        .style("fill", "orange")
+        .attr("d", arc);
+
+        big_gain.attr("transform", "rotate(-45)");
+
+    // to make working with angles easy
+    window.TO_RAD = Math.PI / 180;
+    window.TO_DEG = 1 / TO_RAD;
+
+    Leap.loop({
+
+      // frame callback is run before individual frame components
+      frame: function(frame){
+        out.innerHTML = ''
+      },
+
+      // hand callbacks are run once for each hand in the frame
+      hand: function(hand){
+        out.innerHTML += ' &nbsp;roll: ' + Math.round(hand.roll() * TO_DEG) + '°<br/>'
+
+        var hand_position = Math.round(hand.roll()) 
+        var rotateDeg = 0;
+
+        console.log(hand_position)
+
+        if (Math.abs(hand_position) == 0) {
+           rotateDeg = -45
+        }  
+
+        if (hand_position == 1) {
+           rotateDeg = -135
+        }  
+
+        if (Math.abs(hand_position) == 2) {
+           rotateDeg = -225
+        }  
+
+        if (Math.abs(hand_position) == 3) {
+           rotateDeg = -225
+        }  
+
+        if (hand_position == -1) {
+           rotateDeg = 45
+        }  
+
+        big_gain
+          .attr("transform", "rotate("+ rotateDeg +")")
+    
+        if (rotateDeg == -225 && hand.type == 'left'){ 
+          document.getElementById("link").innerHTML = "NEXT"}
+      }
+    });
+
+    </script>
 
     <div id="out"></div>
-
-    <a id= "link" href="hover.html">  </a>
+    <a id= "link" href="hover.html"> </a>
 
   </body>
 
