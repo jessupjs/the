@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style> 
+
+.bar { fill: steelblue; }
+.hover {color: yellow;}
+.clicked {fill: red;}
+
+</style>
+<body>  
+
+<h1> Practice the use of the right-hand index finger </h1>
+<!-- <h3> Fast close the right-hand index finger to click on the bars </h3> -->
+<h4 id="header"> </h4>
+
+<script src="//d3js.org/d3.v4.min.js"></script>
+    <script src="lib/leap-1.0.0.js"></script>
+<script>
+var data = [{"salesperson":"Bob","sales":100},{"salesperson":"Robin","sales":12},{"salesperson":"Anne","sales":41},{"salesperson":"Mark","sales":16},{"salesperson":"Joe","sales":60},{"salesperson":"Eve","sales":38},{"salesperson":"Karen","sales":21},{"salesperson":"Kirsty","sales":25},{"salesperson":"Chris","sales":30},{"salesperson":"Lisa","sales":47},{"salesperson":"Tom","sales":15},{"salesperson":"Stacy","sales":20},{"salesperson":"Charles","sales":13},{"salesperson":"Mary","sales":29}];
+
+// set the dimensions and margins of the graph
+var margin = {top: 20, right: 20, bottom: 30, left: 40},
+    width = 960 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+// set the ranges
+var y = d3.scaleBand()
+          .range([height, 0])
+          .padding(0.1);
+
+var x = d3.scaleLinear()
+          .range([0, width]);
+          
+// append the svg object to the body of the page
+// append a 'group' element to 'svg'
+// moves the 'group' element to the top left margin
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", 
+          "translate(" + margin.left + "," + margin.top + ")");
+
+  // format the data
+  data.forEach(function(d) {
+    d.sales = +d.sales;
+  });
+
+  // Scale the range of the data in the domains
+  x.domain([0, d3.max(data, function(d){ return d.sales; })])
+  y.domain(data.map(function(d) { return d.salesperson; }));
+  //y.domain([0, d3.max(data, function(d) { return d.sales; })]);
+
+  // append the rectangles for the bar chart
+  svg.selectAll(".bar")
+      .data(data)
+    .enter().append("rect")
+      .attr("class", "bar")
+      .attr("x", function(d) { return x(d.sales); })
+      .attr("width", function(d) {return width - x(d.sales); } )
+      .attr("y", function(d) { return y(d.salesperson); })
+      .attr("height", y.bandwidth())
+      
+      // .on("click", click)
+      .on("mousemove", hover)
+      .on("mouseout", hover_out)
+
+
+  function hover(){
+    d3.select(this).style("fill", "yellow")
+  }
+
+  function hover_out(){
+    d3.select(this).style("fill", "steelblue")
+  }
+
+  // function click(){
+  //   d3.select(this).style("fill", "red")
+  // }    
+
+  var scaleLeftFingerDirection = d3.scaleLinear()
+                            .domain([-0.9, 0.5])
+                            .range([0, 15]);                            
+
+  Leap.loop({
+
+        // frame callback is run before individual frame components
+        frame: function(frame){
+   
+        },
+
+        // hand callbacks are run once for each hand in the frame
+        hand: function(hand){
+
+          document.getElementById("header").innerHTML = "-"
+
+          // LEFT hand INDEX up    
+        if(hand.indexFinger.extended && hand.type == 'right' 
+            && hand.thumb.extended == false
+            && hand.middleFinger.extended == false 
+            && hand.ringFinger.extended == false 
+            && hand.pinky.extended == false){
+
+            document.getElementById("header").innerHTML = "Finder detected"
+
+            index = Math.round(scaleLeftFingerDirection(hand.indexFinger.direction[1]))
+   
+            bar = d3.selectAll(".bar")._groups[0][index]
+            if(typeof bar !== "undefined"){bar.setAttribute("opacity", 0.1)}
+              
+              for (var i=0; i < 15; i++){
+                if(i !== index){
+                  bar_other = bar = d3.selectAll(".bar")._groups[0][i]
+
+                  if(typeof bar_other !== "undefined"){
+                    bar_other
+                    .setAttribute("opacity", 1)
+                  }
+                }
+              }
+            }
+
+          //     // LEFT hand INDEX down  
+          //     if(hand.indexFinger.extended== false && hand.type == 'right' 
+          //     && hand.thumb.extended == false
+          //     && hand.middleFinger.extended == false 
+          //     && hand.ringFinger.extended == false 
+          //     && hand.pinky.extended == false){  
+
+          //     //document.getElementById("header").innerHTML = "Clicked"  
+          //     index = Math.round(scaleLeftFingerDirection(hand.indexFinger.direction[1]))
+     
+          //     bar = d3.selectAll(".bar")._groups[0][index]
+          //     if(typeof bar !== "undefined"){
+                
+          //       console.log(bar)
+          //       bar.setAttribute("class", "bar clicked")
+
+          //     }
+        
+          // }
+
+          
+        } 
+     });  
+    
+</script>
+
+<a id= "link" href="z-axis.html"> NEXT </a>
+</body>
