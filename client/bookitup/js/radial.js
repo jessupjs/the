@@ -120,6 +120,8 @@ class Radial {
             .key(d => d.genre).sortKeys(d3.ascending)
             .rollup(v => v.length)
             .entries(genre);
+        console.log(`////////////////////////// ${vis.parent} sort: ${vis.sort}`);
+        console.log(vis.genreData);
 
         // Sort
         if (vis.sort === 'abc') {
@@ -136,8 +138,8 @@ class Radial {
         vis.genreData.forEach((d, i) => {
             d.index = i;
             // Get coords
-            d.x = vis.innerRadius * Math.sin(vis.coordScale(i));
-            d.y = vis.innerRadius * Math.cos(vis.coordScale(i));
+            d.x = Math.round(vis.innerRadius * Math.sin(vis.coordScale(i)));
+            d.y = Math.round(vis.innerRadius * Math.cos(vis.coordScale(i)));
         });
 
         // Update scales (post)

@@ -20,12 +20,20 @@ d3.json(`data/scrapy-similars_40961621_100.json`).then(d => {
     rose2 = new Rose(data2, 'rose2');
 }).catch(err => console.log(err));
 
-// Test 3 : similars
+// Test 3A : custom - Tamara Munzner
 d3.json(`data/scrapy-TamaraMunzner.json`).then(d => {
     const data1 = d;
     const data2 = JSON.parse(JSON.stringify(d));
-    radial3 = new Radial(data1, 'radial3');
-    rose3 = new Rose(data2, 'rose3');
+    radial3 = new Radial(data1, 'radial3A');
+    rose3 = new Rose(data2, 'rose3A');
+}).catch(err => console.log(err));
+
+// Test 3B : custom - Zona Kostic
+d3.json(`data/scrapy-ZonaKostic.json`).then(d => {
+    const data1 = d;
+    const data2 = JSON.parse(JSON.stringify(d));
+    radial3 = new Radial(data1, 'radial3B');
+    rose3 = new Rose(data2, 'rose3B');
 }).catch(err => console.log(err));
 
 /*
