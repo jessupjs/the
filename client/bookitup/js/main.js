@@ -1,39 +1,29 @@
 'use strict';
 
 // radials
-let radial1, radial2, radial3A, radial3B;
-let rose1, rose2, rose3A, rose3B;
+let orderedRadialZonaK;
+let radialZonaK;
+let roseZonaK;
 
-// Test 1 : randoms
-d3.json(`data/scrapy-randoms_set1_100.json`).then(d => {
-    const data1 = d;
-    const data2 = JSON.parse(JSON.stringify(d));
-    radial1 = new Radial(data1, 'radial1');
-    rose1 = new Rose(data2, 'rose1');
-}).catch(err => console.log(err));
+let _hierarchy;
 
-// Test 2 : similars
-d3.json(`data/scrapy-similars_40961621_100.json`).then(d => {
-    const data1 = d;
-    const data2 = JSON.parse(JSON.stringify(d));
-    radial2 = new Radial(data1, 'radial2');
-    rose2 = new Rose(data2, 'rose2');
-}).catch(err => console.log(err));
+// Load shared general data
+d3.json('data/genre_hierarchy.json').then(d => {
 
-// Test 3A : custom - Tamara Munzner
-d3.json(`data/scrapy-TamaraMunzner.json`).then(d => {
-    const data1 = d;
-    const data2 = JSON.parse(JSON.stringify(d));
-    radial3A = new Radial(data1, 'radial3A');
-    rose3A = new Rose(data2, 'rose3A');
-}).catch(err => console.log(err));
+    // Put up for global access
+    _hierarchy = d;
+    console.log('////////////////////////// GENRE HIERARCHY');
+    console.log(_hierarchy);
 
-// Test 3B : custom - Zona Kostic
-d3.json(`data/scrapy-ZonaKostic.json`).then(d => {
-    const data1 = d;
-    const data2 = JSON.parse(JSON.stringify(d));
-    radial3B = new Radial(data1, 'radial3B');
-    rose3B = new Rose(data2, 'rose3B');
+    // Test 3B : custom - Zona Kostic
+    d3.json(`data/scrapy-ZonaKostic.json`).then(d => {
+        const data1 = d;
+        const data2 = JSON.parse(JSON.stringify(d));
+        orderedRadialZonaK = new OrderedRadial(data1, 'orderedRadialZonaK');
+        radialZonaK = new Radial(data1, 'radialZonaK');
+        roseZonaK = new Rose(data2, 'roseZonaK');
+    }).catch(err => console.log(err));
+
 }).catch(err => console.log(err));
 
 /*
@@ -41,11 +31,5 @@ d3.json(`data/scrapy-ZonaKostic.json`).then(d => {
  */
 function sortIt(passthru) {
     radial1.sortIt(passthru.value);
-    radial2.sortIt(passthru.value);
-    radial3A.sortIt(passthru.value);
-    radial3B.sortIt(passthru.value);
     rose1.sortIt(passthru.value);
-    rose2.sortIt(passthru.value);
-    rose3A.sortIt(passthru.value);
-    rose3B.sortIt(passthru.value);
 }

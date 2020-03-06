@@ -1,0 +1,162 @@
+{
+  "parent": "root",
+  "children": [
+    {
+      "parent": "fiction",
+      "count": 0,
+      "children": [
+        {
+          "parent": "christian",
+          "count": 0,
+          "children": []
+        },
+        {
+          "parent": "classics",
+          "count": 0,
+          "children": []
+        },
+        {
+          "parent": "comics",
+          "count": 0,
+          "children": []
+        },
+        {
+          "parent": "fantasy",
+          "count": 0,
+          "children": []
+        },
+        {
+          "parent": "graphic novels",
+          "count": 0,
+          "children": []
+        },
+        {
+          "parent": "historical fiction",
+          "count": 0,
+          "children": []
+        },
+        {
+          "parent": "horror",
+          "count": 0,
+          "children": []
+        },
+        {
+          "parent": "mystery",
+          "count": 0,
+          "children": []
+        },
+        {
+          "parent": "other",
+          "count": 0,
+          "children": []
+        },
+        {
+          "parent": "poetry",
+          "count": 0,
+          "children": []
+        },
+        {
+          "parent": "romance",
+          "count": 0,
+          "children": []
+        },
+        {
+          "parent": "science fiction",
+          "count": 0,
+          "children": []
+        },
+        {
+          "parent": "thriller",
+          "count": 0,
+          "children": []
+        },
+        {
+          "parent": "young adult",
+          "count": 0,
+          "children": []
+        }
+      ]
+    },
+    {
+      "parent": "nonfiction",
+      "count": 0,
+      "children": [
+        {
+          "parent": "art",
+          "count": 0,
+          "children": []
+        },
+        {
+          "parent": "biography",
+          "count": 0,
+          "children": []
+        },
+        {
+          "parent": "business",
+          "count": 0,
+          "children": []
+        },
+        {
+          "parent": "children's",
+          "count": 0,
+          "children": []
+        },
+        {
+          "parent": "cookbooks",
+          "count": 0,
+          "children": []
+        },
+        {
+          "parent": "history",
+          "count": 0,
+          "children": []
+        },
+        {
+          "parent": "memoir",
+          "count": 0,
+          "children": []
+        },
+        {
+          "parent": "music",
+          "count": 0,
+          "children": []
+        },
+        {
+          "parent": "other",
+          "count": 0,
+          "children": []
+        },
+        {
+          "parent": "psychology",
+          "count": 0,
+          "children": []
+        },
+        {
+          "parent": "science",
+          "count": 0,
+          "children": []
+        },
+        {
+          "parent": "self help",
+          "count": 0,
+          "children": []
+        },
+        {
+          "parent": "sports",
+          "count": 0,
+          "children": []
+        },
+        {
+          "parent": "travel",
+          "count": 0,
+          "children": []
+        }
+      ]
+    },
+    {
+      "parent": "other",
+      "count": 0,
+      "children": []
+    }
+  ]
+}

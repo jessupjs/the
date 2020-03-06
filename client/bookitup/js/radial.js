@@ -3,7 +3,7 @@
 class Radial {
 
     constructor(_data, _ref) {
-        this.data = _data.splice(0, 100);
+        this.data = JSON.parse(JSON.stringify(_data)).splice(0, 100);
         this.parent = _ref;
 
         this.initVis()
@@ -120,8 +120,6 @@ class Radial {
             .key(d => d.genre).sortKeys(d3.ascending)
             .rollup(v => v.length)
             .entries(genre);
-        console.log(`////////////////////////// ${vis.parent} sort: ${vis.sort}`);
-        console.log(vis.genreData);
 
         // Sort
         if (vis.sort === 'abc') {
