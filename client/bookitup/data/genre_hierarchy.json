@@ -6,11 +6,6 @@
       "count": 0,
       "children": [
         {
-          "parent": "christian",
-          "count": 0,
-          "children": []
-        },
-        {
           "parent": "classics",
           "count": 0,
           "children": []
@@ -98,6 +93,11 @@
         },
         {
           "parent": "children's",
+          "count": 0,
+          "children": []
+        },
+        {
+          "parent": "christian",
           "count": 0,
           "children": []
         },
