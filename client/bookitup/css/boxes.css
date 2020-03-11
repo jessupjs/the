@@ -1,0 +1,12 @@
+
+.author {
+    fill: rgb(255, 255, 255);
+    stroke:rgba(0, 0, 0, 1);
+    stroke-width: 0.5px;
+}
+
+.work {
+    fill: rgb(0, 0, 0);
+    stroke:rgba(255, 255, 255, 1);
+    stroke-width: 0;
+}

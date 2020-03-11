@@ -7,13 +7,15 @@ let roseZonaK, roseJeffB, roseJaredJ;
 
 let _hierarchy;
 
+let boxes40180098;
+
 // Load shared general data
 d3.json('data/genre_hierarchy.json').then(d => {
 
     // Put up for global access
     _hierarchy = d;
-    console.log('////////////////////////// GENRE HIERARCHY');
-    console.log(_hierarchy);
+    //console.log('////////////////////////// GENRE HIERARCHY');
+    //console.log(_hierarchy);
 
     // Test : Zona Kostic
     d3.json(`data/scrapy-ZonaKostic.json`).then(d => {
@@ -42,6 +44,12 @@ d3.json('data/genre_hierarchy.json').then(d => {
         roseJaredJ = new Rose(data2, 'roseJaredJ');
     }).catch(err => console.log(err));
 
+}).catch(err => console.log(err));
+
+
+// Load book data for boxes
+d3.json('data/book_40180098.json').then(d => {
+    boxes40180098 = new Boxes(d, 'boxes40180098');
 }).catch(err => console.log(err));
 
 /*
