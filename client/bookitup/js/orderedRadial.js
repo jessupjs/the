@@ -157,8 +157,8 @@ class OrderedRadial {
                 });
             }
         });
-        //console.log(`////////////////////////// ${vis.parent} HIERARCHY`);
-        //console.log(vis.hierarchy);
+        console.log(`////////////////////////// ${vis.parent} HIERARCHY`);
+        console.log(vis.hierarchy);
 
         // :^)
         vis.updateVis();

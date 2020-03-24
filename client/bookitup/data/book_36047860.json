@@ -1,0 +1,1079 @@
+{
+    "Request": {
+        "authentication": "true",
+        "key": "xIX9Moz1O4Sbz3F3f8fmA",
+        "method": "book_show"
+    },
+    "book": {
+        "id": "36047860",
+        "title": "Milkman",
+        "isbn": "0571338763",
+        "isbn13": "9780571338764",
+        "asin": null,
+        "kindle_asin": null,
+        "marketplace_id": null,
+        "country_code": "US",
+        "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1526985855l/36047860._SX98_.jpg",
+        "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1526985855l/36047860._SY75_.jpg",
+        "publication_year": "2018",
+        "publication_month": "5",
+        "publication_day": "15",
+        "publisher": "Faber & Faber",
+        "language_code": "eng",
+        "is_ebook": "true",
+        "description": "In this unnamed city, to be interesting is dangerous. Middle sister, our protagonist, is busy attempting to keep her mother from discovering her maybe-boyfriend and to keep everyone in the dark about her encounter with Milkman. But when first brother-in-law sniffs out her struggle, and rumours start to swell, middle sister becomes 'interesting'. The last thing she ever wanted to be. To be interesting is to be noticed and to be noticed is dangerous.<br /><br /><i>Milkman</i> is a tale of gossip and hearsay, silence and deliberate deafness. It is the story of inaction with enormous consequences.",
+        "work": {
+            "id": {
+                "@type": "integer",
+                "#text": "57622946"
+            },
+            "books_count": {
+                "@type": "integer",
+                "#text": "48"
+            },
+            "best_book_id": {
+                "@type": "integer",
+                "#text": "36047860"
+            },
+            "reviews_count": {
+                "@type": "integer",
+                "#text": "100027"
+            },
+            "ratings_sum": {
+                "@type": "integer",
+                "#text": "116479"
+            },
+            "ratings_count": {
+                "@type": "integer",
+                "#text": "32522"
+            },
+            "text_reviews_count": {
+                "@type": "integer",
+                "#text": "5237"
+            },
+            "original_publication_year": {
+                "@type": "integer",
+                "#text": "2018"
+            },
+            "original_publication_month": {
+                "@type": "integer",
+                "#text": "5"
+            },
+            "original_publication_day": {
+                "@type": "integer",
+                "@nil": "true"
+            },
+            "original_title": "Milkman",
+            "original_language_id": {
+                "@type": "integer",
+                "@nil": "true"
+            },
+            "media_type": "book",
+            "rating_dist": "5:8750|4:10128|3:7387|2:3799|1:2458|total:32522",
+            "desc_user_id": {
+                "@type": "integer",
+                "#text": "81715496"
+            },
+            "default_chaptering_book_id": {
+                "@type": "integer",
+                "@nil": "true"
+            },
+            "default_description_language_code": {
+                "@nil": "true"
+            },
+            "work_uri": "kca://work/amzn1.gr.work.v1.7kOlTsLHn_dYXs5McUWseQ"
+        },
+        "average_rating": "3.58",
+        "num_pages": "352",
+        "format": "ebook",
+        "edition_information": null,
+        "ratings_count": "24265",
+        "text_reviews_count": "3956",
+        "url": "https://www.goodreads.com/book/show/36047860-milkman",
+        "link": "https://www.goodreads.com/book/show/36047860-milkman",
+        "authors": {
+            "author": {
+                "id": "396165",
+                "name": "Anna Burns",
+                "role": null,
+                "image_url": {
+                    "@nophoto": "false",
+                    "#text": "https://images.gr-assets.com/authors/1539729090p5/396165.jpg"
+                },
+                "small_image_url": {
+                    "@nophoto": "false",
+                    "#text": "https://images.gr-assets.com/authors/1539729090p2/396165.jpg"
+                },
+                "link": "https://www.goodreads.com/author/show/396165.Anna_Burns",
+                "average_rating": "3.58",
+                "ratings_count": "33152",
+                "text_reviews_count": "5361"
+            }
+        },
+        "reviews_widget": "<style>\n  #goodreads-widget {\n    font-family: georgia, serif;\n    padding: 18px 0;\n    width:565px;\n  }\n  #goodreads-widget h1 {\n    font-weight:normal;\n    font-size: 16px;\n    border-bottom: 1px solid #BBB596;\n    margin-bottom: 0;\n  }\n  #goodreads-widget a {\n    text-decoration: none;\n    color:#660;\n  }\n  iframe{\n    background-color: #fff;\n  }\n  #goodreads-widget a:hover { text-decoration: underline; }\n  #goodreads-widget a:active {\n    color:#660;\n  }\n  #gr_footer {\n    width: 100%;\n    border-top: 1px solid #BBB596;\n    text-align: right;\n  }\n  #goodreads-widget .gr_branding{\n    color: #382110;\n    font-size: 11px;\n    text-decoration: none;\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  }\n</style>\n<div id=\"goodreads-widget\">\n  <div id=\"gr_header\"><h1><a rel=\"nofollow\" href=\"https://www.goodreads.com/book/show/36047860-milkman\">Milkman Reviews</a></h1></div>\n  <iframe id=\"the_iframe\" src=\"https://www.goodreads.com/api/reviews_widget_iframe?did=DEVELOPER_ID&amp;format=html&amp;isbn=0571338763&amp;links=660&amp;min_rating=&amp;review_back=fff&amp;stars=000&amp;text=000\" width=\"565\" height=\"400\" frameborder=\"0\"></iframe>\n  <div id=\"gr_footer\">\n    <a class=\"gr_branding\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" href=\"https://www.goodreads.com/book/show/36047860-milkman?utm_medium=api&amp;utm_source=reviews_widget\">Reviews from Goodreads.com</a>\n  </div>\n</div>",
+        "popular_shelves": {
+            "shelf": [
+                {
+                    "@name": "to-read",
+                    "@count": "50430"
+                },
+                {
+                    "@name": "currently-reading",
+                    "@count": "10045"
+                },
+                {
+                    "@name": "fiction",
+                    "@count": "912"
+                },
+                {
+                    "@name": "dnf",
+                    "@count": "231"
+                },
+                {
+                    "@name": "abandoned",
+                    "@count": "216"
+                },
+                {
+                    "@name": "favorites",
+                    "@count": "204"
+                },
+                {
+                    "@name": "ireland",
+                    "@count": "196"
+                },
+                {
+                    "@name": "did-not-finish",
+                    "@count": "184"
+                },
+                {
+                    "@name": "book-club",
+                    "@count": "179"
+                },
+                {
+                    "@name": "literary-fiction",
+                    "@count": "161"
+                },
+                {
+                    "@name": "audiobook",
+                    "@count": "131"
+                },
+                {
+                    "@name": "booker-prize",
+                    "@count": "126"
+                },
+                {
+                    "@name": "owned",
+                    "@count": "122"
+                },
+                {
+                    "@name": "historical-fiction",
+                    "@count": "119"
+                },
+                {
+                    "@name": "audiobooks",
+                    "@count": "115"
+                },
+                {
+                    "@name": "read-in-2019",
+                    "@count": "114"
+                },
+                {
+                    "@name": "irish",
+                    "@count": "112"
+                },
+                {
+                    "@name": "man-booker",
+                    "@count": "110"
+                },
+                {
+                    "@name": "books-i-own",
+                    "@count": "108"
+                },
+                {
+                    "@name": "contemporary",
+                    "@count": "105"
+                },
+                {
+                    "@name": "booker",
+                    "@count": "96"
+                },
+                {
+                    "@name": "read-2019",
+                    "@count": "91"
+                },
+                {
+                    "@name": "library",
+                    "@count": "89"
+                },
+                {
+                    "@name": "man-booker-prize",
+                    "@count": "85"
+                },
+                {
+                    "@name": "didn-t-finish",
+                    "@count": "78"
+                },
+                {
+                    "@name": "audio",
+                    "@count": "78"
+                },
+                {
+                    "@name": "novels",
+                    "@count": "75"
+                },
+                {
+                    "@name": "kindle",
+                    "@count": "71"
+                },
+                {
+                    "@name": "2019-reads",
+                    "@count": "65"
+                },
+                {
+                    "@name": "booker-prize-winners",
+                    "@count": "59"
+                },
+                {
+                    "@name": "unfinished",
+                    "@count": "57"
+                },
+                {
+                    "@name": "audible",
+                    "@count": "55"
+                },
+                {
+                    "@name": "bookclub",
+                    "@count": "51"
+                },
+                {
+                    "@name": "literature",
+                    "@count": "48"
+                },
+                {
+                    "@name": "booker-winners",
+                    "@count": "47"
+                },
+                {
+                    "@name": "contemporary-fiction",
+                    "@count": "47"
+                },
+                {
+                    "@name": "2019-books",
+                    "@count": "46"
+                },
+                {
+                    "@name": "gave-up",
+                    "@count": "42"
+                },
+                {
+                    "@name": "man-booker-2018",
+                    "@count": "42"
+                },
+                {
+                    "@name": "2019-read",
+                    "@count": "41"
+                },
+                {
+                    "@name": "tbr",
+                    "@count": "41"
+                },
+                {
+                    "@name": "to-buy",
+                    "@count": "37"
+                },
+                {
+                    "@name": "favourites",
+                    "@count": "36"
+                },
+                {
+                    "@name": "ebook",
+                    "@count": "36"
+                },
+                {
+                    "@name": "gave-up-on",
+                    "@count": "34"
+                },
+                {
+                    "@name": "couldn-t-finish",
+                    "@count": "33"
+                },
+                {
+                    "@name": "historical",
+                    "@count": "33"
+                },
+                {
+                    "@name": "to-read-fiction",
+                    "@count": "33"
+                },
+                {
+                    "@name": "literary",
+                    "@count": "32"
+                },
+                {
+                    "@name": "book-group",
+                    "@count": "31"
+                },
+                {
+                    "@name": "irish-literature",
+                    "@count": "31"
+                },
+                {
+                    "@name": "adult-fiction",
+                    "@count": "31"
+                },
+                {
+                    "@name": "owned-books",
+                    "@count": "29"
+                },
+                {
+                    "@name": "audio-book",
+                    "@count": "29"
+                },
+                {
+                    "@name": "northern-ireland",
+                    "@count": "29"
+                },
+                {
+                    "@name": "21st-century",
+                    "@count": "28"
+                },
+                {
+                    "@name": "adult",
+                    "@count": "28"
+                },
+                {
+                    "@name": "female-authors",
+                    "@count": "28"
+                },
+                {
+                    "@name": "read-in-2018",
+                    "@count": "27"
+                },
+                {
+                    "@name": "award-winners",
+                    "@count": "27"
+                },
+                {
+                    "@name": "audio-books",
+                    "@count": "26"
+                },
+                {
+                    "@name": "novel",
+                    "@count": "26"
+                },
+                {
+                    "@name": "award-winner",
+                    "@count": "26"
+                },
+                {
+                    "@name": "man-booker-winners",
+                    "@count": "25"
+                },
+                {
+                    "@name": "2018-releases",
+                    "@count": "25"
+                },
+                {
+                    "@name": "politics",
+                    "@count": "25"
+                },
+                {
+                    "@name": "female-author",
+                    "@count": "25"
+                },
+                {
+                    "@name": "irish-lit",
+                    "@count": "25"
+                },
+                {
+                    "@name": "feminism",
+                    "@count": "24"
+                },
+                {
+                    "@name": "english",
+                    "@count": "24"
+                },
+                {
+                    "@name": "tob-2019",
+                    "@count": "23"
+                },
+                {
+                    "@name": "booker-2018",
+                    "@count": "23"
+                },
+                {
+                    "@name": "women",
+                    "@count": "23"
+                },
+                {
+                    "@name": "could-not-finish",
+                    "@count": "23"
+                },
+                {
+                    "@name": "on-my-shelf",
+                    "@count": "22"
+                },
+                {
+                    "@name": "bookshelf",
+                    "@count": "21"
+                },
+                {
+                    "@name": "general-fiction",
+                    "@count": "21"
+                },
+                {
+                    "@name": "tournament-of-books",
+                    "@count": "21"
+                },
+                {
+                    "@name": "stopped-reading",
+                    "@count": "21"
+                },
+                {
+                    "@name": "read-2018",
+                    "@count": "21"
+                },
+                {
+                    "@name": "war",
+                    "@count": "21"
+                },
+                {
+                    "@name": "wish-list",
+                    "@count": "21"
+                },
+                {
+                    "@name": "never-finished",
+                    "@count": "20"
+                },
+                {
+                    "@name": "library-books",
+                    "@count": "20"
+                },
+                {
+                    "@name": "owned-tbr",
+                    "@count": "20"
+                },
+                {
+                    "@name": "booker-winner",
+                    "@count": "20"
+                },
+                {
+                    "@name": "ebooks",
+                    "@count": "20"
+                },
+                {
+                    "@name": "europe",
+                    "@count": "19"
+                },
+                {
+                    "@name": "on-hold",
+                    "@count": "19"
+                },
+                {
+                    "@name": "maybe",
+                    "@count": "19"
+                },
+                {
+                    "@name": "2019-reading-list",
+                    "@count": "19"
+                },
+                {
+                    "@name": "my-library",
+                    "@count": "18"
+                },
+                {
+                    "@name": "irish-fiction",
+                    "@count": "18"
+                },
+                {
+                    "@name": "2018-reads",
+                    "@count": "18"
+                },
+                {
+                    "@name": "read-in-2020",
+                    "@count": "17"
+                },
+                {
+                    "@name": "dropped",
+                    "@count": "17"
+                },
+                {
+                    "@name": "awards",
+                    "@count": "17"
+                },
+                {
+                    "@name": "irish-authors",
+                    "@count": "17"
+                },
+                {
+                    "@name": "book-club-books",
+                    "@count": "17"
+                },
+                {
+                    "@name": "2010s",
+                    "@count": "17"
+                }
+            ]
+        },
+        "book_links": {
+            "book_link": {
+                "id": "8",
+                "name": "Libraries",
+                "link": "https://www.goodreads.com/book_link/follow/8"
+            }
+        },
+        "buy_links": {
+            "buy_link": [
+                {
+                    "id": "1",
+                    "name": "Amazon",
+                    "link": "https://www.goodreads.com/book_link/follow/1"
+                },
+                {
+                    "id": "10",
+                    "name": "Audible",
+                    "link": "https://www.goodreads.com/book_link/follow/10"
+                },
+                {
+                    "id": "3",
+                    "name": "Barnes & Noble",
+                    "link": "https://www.goodreads.com/book_link/follow/3"
+                },
+                {
+                    "id": "1027",
+                    "name": "Walmart eBooks",
+                    "link": "https://www.goodreads.com/book_link/follow/1027"
+                },
+                {
+                    "id": "2102",
+                    "name": "Apple Books",
+                    "link": "https://www.goodreads.com/book_link/follow/2102"
+                },
+                {
+                    "id": "8036",
+                    "name": "Google Play",
+                    "link": "https://www.goodreads.com/book_link/follow/8036"
+                },
+                {
+                    "id": "4",
+                    "name": "Abebooks",
+                    "link": "https://www.goodreads.com/book_link/follow/4"
+                },
+                {
+                    "id": "882",
+                    "name": "Book Depository",
+                    "link": "https://www.goodreads.com/book_link/follow/882"
+                },
+                {
+                    "id": "5",
+                    "name": "Alibris",
+                    "link": "https://www.goodreads.com/book_link/follow/5"
+                },
+                {
+                    "id": "9",
+                    "name": "Indigo",
+                    "link": "https://www.goodreads.com/book_link/follow/9"
+                },
+                {
+                    "id": "107",
+                    "name": "Better World Books",
+                    "link": "https://www.goodreads.com/book_link/follow/107"
+                },
+                {
+                    "id": "7",
+                    "name": "IndieBound",
+                    "link": "https://www.goodreads.com/book_link/follow/7"
+                }
+            ]
+        },
+        "series_works": null,
+        "similar_books": {
+            "book": [
+                {
+                    "id": "41057294",
+                    "title": "Normal People",
+                    "title_without_series": "Normal People",
+                    "link": "https://www.goodreads.com/book/show/41057294-normal-people",
+                    "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1571423190l/41057294._SY75_.jpg",
+                    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1571423190l/41057294._SX98_.jpg",
+                    "num_pages": "273",
+                    "work": {
+                        "id": "59141209"
+                    },
+                    "isbn": "1984822179",
+                    "isbn13": "9781984822178",
+                    "average_rating": "3.58",
+                    "ratings_count": "32522",
+                    "publication_year": null,
+                    "publication_month": null,
+                    "publication_day": null,
+                    "authors": {
+                        "author": {
+                            "id": "15860970",
+                            "name": "Sally Rooney",
+                            "link": "https://www.goodreads.com/author/show/15860970.Sally_Rooney"
+                        }
+                    }
+                },
+                {
+                    "id": "36396289",
+                    "title": "Everything Under",
+                    "title_without_series": "Everything Under",
+                    "link": "https://www.goodreads.com/book/show/36396289-everything-under",
+                    "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1522082835l/36396289._SY75_.jpg",
+                    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1522082835l/36396289._SX98_.jpg",
+                    "num_pages": "264",
+                    "work": {
+                        "id": "58089593"
+                    },
+                    "isbn": "191070234X",
+                    "isbn13": "9781910702345",
+                    "average_rating": "3.58",
+                    "ratings_count": "32522",
+                    "publication_year": "2018",
+                    "publication_month": "7",
+                    "publication_day": "12",
+                    "authors": {
+                        "author": {
+                            "id": "14247059",
+                            "name": "Daisy Johnson",
+                            "link": "https://www.goodreads.com/author/show/14247059.Daisy_Johnson"
+                        }
+                    }
+                },
+                {
+                    "id": "41081373",
+                    "title": "Girl, Woman, Other",
+                    "title_without_series": "Girl, Woman, Other",
+                    "link": "https://www.goodreads.com/book/show/41081373-girl-woman-other",
+                    "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1542296262l/41081373._SY75_.jpg",
+                    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1542296262l/41081373._SX98_.jpg",
+                    "num_pages": "453",
+                    "work": {
+                        "id": "64185267"
+                    },
+                    "isbn": "0241364906",
+                    "isbn13": "9780241364901",
+                    "average_rating": "3.58",
+                    "ratings_count": "32522",
+                    "publication_year": "2019",
+                    "publication_month": "5",
+                    "publication_day": "2",
+                    "authors": {
+                        "author": {
+                            "id": "51051",
+                            "name": "Bernardine Evaristo",
+                            "link": "https://www.goodreads.com/author/show/51051.Bernardine_Evaristo"
+                        }
+                    }
+                },
+                {
+                    "id": "32187419",
+                    "title": "Conversations with Friends",
+                    "title_without_series": "Conversations with Friends",
+                    "link": "https://www.goodreads.com/book/show/32187419-conversations-with-friends",
+                    "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1500031338l/32187419._SY75_.jpg",
+                    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1500031338l/32187419._SX98_.jpg",
+                    "num_pages": "304",
+                    "work": {
+                        "id": "52827120"
+                    },
+                    "isbn": null,
+                    "isbn13": null,
+                    "average_rating": "3.58",
+                    "ratings_count": "32522",
+                    "publication_year": "2017",
+                    "publication_month": "7",
+                    "publication_day": "11",
+                    "authors": {
+                        "author": {
+                            "id": "15860970",
+                            "name": "Sally Rooney",
+                            "link": "https://www.goodreads.com/author/show/15860970.Sally_Rooney"
+                        }
+                    }
+                },
+                {
+                    "id": "38819868",
+                    "title": "My Sister, the Serial Killer",
+                    "title_without_series": "My Sister, the Serial Killer",
+                    "link": "https://www.goodreads.com/book/show/38819868-my-sister-the-serial-killer",
+                    "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1523366732l/38819868._SY75_.jpg",
+                    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1523366732l/38819868._SX98_.jpg",
+                    "num_pages": "226",
+                    "work": {
+                        "id": "60394238"
+                    },
+                    "isbn": "0385544235",
+                    "isbn13": "9780385544238",
+                    "average_rating": "3.58",
+                    "ratings_count": "32522",
+                    "publication_year": "2018",
+                    "publication_month": "11",
+                    "publication_day": "20",
+                    "authors": {
+                        "author": {
+                            "id": "14713014",
+                            "name": "Oyinkan Braithwaite",
+                            "link": "https://www.goodreads.com/author/show/14713014.Oyinkan_Braithwaite"
+                        }
+                    }
+                },
+                {
+                    "id": "35659255",
+                    "title": "The Long Take",
+                    "title_without_series": "The Long Take",
+                    "link": "https://www.goodreads.com/book/show/35659255-the-long-take",
+                    "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1499860935l/35659255._SX50_.jpg",
+                    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1499860935l/35659255._SX98_.jpg",
+                    "num_pages": "237",
+                    "work": {
+                        "id": "57114158"
+                    },
+                    "isbn": "1509846883",
+                    "isbn13": "9781509846887",
+                    "average_rating": "3.58",
+                    "ratings_count": "32522",
+                    "publication_year": "2018",
+                    "publication_month": "2",
+                    "publication_day": "22",
+                    "authors": {
+                        "author": {
+                            "id": "14072367",
+                            "name": "Robin   Robertson",
+                            "link": "https://www.goodreads.com/author/show/14072367.Robin_Robertson"
+                        }
+                    }
+                },
+                {
+                    "id": "40180098",
+                    "title": "The Overstory",
+                    "title_without_series": "The Overstory",
+                    "link": "https://www.goodreads.com/book/show/40180098-the-overstory",
+                    "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1562786502l/40180098._SY75_.jpg",
+                    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1562786502l/40180098._SX98_.jpg",
+                    "num_pages": "502",
+                    "work": {
+                        "id": "57662223"
+                    },
+                    "isbn": "039335668X",
+                    "isbn13": "9780393356687",
+                    "average_rating": "3.58",
+                    "ratings_count": "32522",
+                    "publication_year": "2019",
+                    "publication_month": "4",
+                    "publication_day": "2",
+                    "authors": {
+                        "author": {
+                            "id": "11783",
+                            "name": "Richard Powers",
+                            "link": "https://www.goodreads.com/author/show/11783.Richard_Powers"
+                        }
+                    }
+                },
+                {
+                    "id": "38140077",
+                    "title": "Washington Black",
+                    "title_without_series": "Washington Black",
+                    "link": "https://www.goodreads.com/book/show/38140077-washington-black",
+                    "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1558478576l/38140077._SX50_.jpg",
+                    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1558478576l/38140077._SX98_.jpg",
+                    "num_pages": "334",
+                    "work": {
+                        "id": "54129272"
+                    },
+                    "isbn": "0525521429",
+                    "isbn13": "9780525521426",
+                    "average_rating": "3.58",
+                    "ratings_count": "32522",
+                    "publication_year": "2018",
+                    "publication_month": "9",
+                    "publication_day": "18",
+                    "authors": {
+                        "author": {
+                            "id": "245590",
+                            "name": "Esi Edugyan",
+                            "link": "https://www.goodreads.com/author/show/245590.Esi_Edugyan"
+                        }
+                    }
+                },
+                {
+                    "id": "36373648",
+                    "title": "The Mars Room",
+                    "title_without_series": "The Mars Room",
+                    "link": "https://www.goodreads.com/book/show/36373648-the-mars-room",
+                    "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1524991696l/36373648._SY75_.jpg",
+                    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1524991696l/36373648._SX98_.jpg",
+                    "num_pages": "338",
+                    "work": {
+                        "id": "57520253"
+                    },
+                    "isbn": "1476756554",
+                    "isbn13": "9781476756554",
+                    "average_rating": "3.58",
+                    "ratings_count": "32522",
+                    "publication_year": "2018",
+                    "publication_month": "5",
+                    "publication_day": "1",
+                    "authors": {
+                        "author": {
+                            "id": "164139",
+                            "name": "Rachel Kushner",
+                            "link": "https://www.goodreads.com/author/show/164139.Rachel_Kushner"
+                        }
+                    }
+                },
+                {
+                    "id": "39738353",
+                    "title": "Lanny",
+                    "title_without_series": "Lanny",
+                    "link": "https://www.goodreads.com/book/show/39738353-lanny",
+                    "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1547475480l/39738353._SY75_.jpg",
+                    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1547475480l/39738353._SX98_.jpg",
+                    "num_pages": "210",
+                    "work": {
+                        "id": "61433795"
+                    },
+                    "isbn": "0571340288",
+                    "isbn13": "9780571340286",
+                    "average_rating": "3.58",
+                    "ratings_count": "32522",
+                    "publication_year": "2019",
+                    "publication_month": "3",
+                    "publication_day": "7",
+                    "authors": {
+                        "author": {
+                            "id": "13807841",
+                            "name": "Max Porter",
+                            "link": "https://www.goodreads.com/author/show/13807841.Max_Porter"
+                        }
+                    }
+                },
+                {
+                    "id": "40545817",
+                    "title": "Spring (Seasonal, #3)",
+                    "title_without_series": "Spring",
+                    "link": "https://www.goodreads.com/book/show/40545817-spring",
+                    "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1529267582l/40545817._SY75_.jpg",
+                    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1529267582l/40545817._SX98_.jpg",
+                    "num_pages": "336",
+                    "work": {
+                        "id": "62958956"
+                    },
+                    "isbn": "0241207053",
+                    "isbn13": "9780241207055",
+                    "average_rating": "3.58",
+                    "ratings_count": "32522",
+                    "publication_year": "2019",
+                    "publication_month": "3",
+                    "publication_day": "28",
+                    "authors": {
+                        "author": {
+                            "id": "68992",
+                            "name": "Ali Smith",
+                            "link": "https://www.goodreads.com/author/show/68992.Ali_Smith"
+                        }
+                    }
+                },
+                {
+                    "id": "42975172",
+                    "title": "The Testaments (The Handmaid's Tale, #2)",
+                    "title_without_series": "The Testaments",
+                    "link": "https://www.goodreads.com/book/show/42975172-the-testaments",
+                    "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1549292344l/42975172._SY75_.jpg",
+                    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1549292344l/42975172._SX98_.jpg",
+                    "num_pages": "422",
+                    "work": {
+                        "id": "66802198"
+                    },
+                    "isbn": "0385543786",
+                    "isbn13": "9780385543781",
+                    "average_rating": "3.58",
+                    "ratings_count": "32522",
+                    "publication_year": "2019",
+                    "publication_month": "9",
+                    "publication_day": "10",
+                    "authors": {
+                        "author": {
+                            "id": "3472",
+                            "name": "Margaret Atwood",
+                            "link": "https://www.goodreads.com/author/show/3472.Margaret_Atwood"
+                        }
+                    }
+                },
+                {
+                    "id": "35277858",
+                    "title": "Ordinary People",
+                    "title_without_series": "Ordinary People",
+                    "link": "https://www.goodreads.com/book/show/35277858-ordinary-people",
+                    "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1518385834l/35277858._SY75_.jpg",
+                    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1518385834l/35277858._SX98_.jpg",
+                    "num_pages": "336",
+                    "work": {
+                        "id": "56638711"
+                    },
+                    "isbn": "1784742163",
+                    "isbn13": "9781784742164",
+                    "average_rating": "3.58",
+                    "ratings_count": "32522",
+                    "publication_year": "2018",
+                    "publication_month": "4",
+                    "publication_day": "5",
+                    "authors": {
+                        "author": {
+                            "id": "313731",
+                            "name": "Diana Evans",
+                            "link": "https://www.goodreads.com/author/show/313731.Diana_Evans"
+                        }
+                    }
+                },
+                {
+                    "id": "40245130",
+                    "title": "Lost Children Archive",
+                    "title_without_series": "Lost Children Archive",
+                    "link": "https://www.goodreads.com/book/show/40245130-lost-children-archive",
+                    "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1547386427l/40245130._SY75_.jpg",
+                    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1547386427l/40245130._SX98_.jpg",
+                    "num_pages": "385",
+                    "work": {
+                        "id": "62525285"
+                    },
+                    "isbn": "0525520619",
+                    "isbn13": "9780525520610",
+                    "average_rating": "3.58",
+                    "ratings_count": "32522",
+                    "publication_year": "2019",
+                    "publication_month": "2",
+                    "publication_day": "12",
+                    "authors": {
+                        "author": {
+                            "id": "4405738",
+                            "name": "Valeria Luiselli",
+                            "link": "https://www.goodreads.com/author/show/4405738.Valeria_Luiselli"
+                        }
+                    }
+                },
+                {
+                    "id": "43256597",
+                    "title": "Night Boat to Tangier",
+                    "title_without_series": "Night Boat to Tangier",
+                    "link": "https://www.goodreads.com/book/show/43256597-night-boat-to-tangier",
+                    "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1555566030l/43256597._SY75_.jpg",
+                    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1555566030l/43256597._SX98_.jpg",
+                    "num_pages": "224",
+                    "work": {
+                        "id": "67129483"
+                    },
+                    "isbn": "0385540310",
+                    "isbn13": "9780385540315",
+                    "average_rating": "3.58",
+                    "ratings_count": "32522",
+                    "publication_year": "2019",
+                    "publication_month": "9",
+                    "publication_day": "17",
+                    "authors": {
+                        "author": {
+                            "id": "490256",
+                            "name": "Kevin Barry",
+                            "link": "https://www.goodreads.com/author/show/490256.Kevin_Barry"
+                        }
+                    }
+                },
+                {
+                    "id": "41880609",
+                    "title": "On Earth We're Briefly Gorgeous",
+                    "title_without_series": "On Earth We're Briefly Gorgeous",
+                    "link": "https://www.goodreads.com/book/show/41880609-on-earth-we-re-briefly-gorgeous",
+                    "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1552172553l/41880609._SX50_.jpg",
+                    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1552172553l/41880609._SX98_.jpg",
+                    "num_pages": "246",
+                    "work": {
+                        "id": "61665003"
+                    },
+                    "isbn": "0525562028",
+                    "isbn13": "9780525562023",
+                    "average_rating": "3.58",
+                    "ratings_count": "32522",
+                    "publication_year": "2019",
+                    "publication_month": "6",
+                    "publication_day": "4",
+                    "authors": {
+                        "author": {
+                            "id": "4456871",
+                            "name": "Ocean Vuong",
+                            "link": "https://www.goodreads.com/author/show/4456871.Ocean_Vuong"
+                        }
+                    }
+                },
+                {
+                    "id": "38922230",
+                    "title": "Ghost Wall",
+                    "title_without_series": "Ghost Wall",
+                    "link": "https://www.goodreads.com/book/show/38922230-ghost-wall",
+                    "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1521962112l/38922230._SY75_.jpg",
+                    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1521962112l/38922230._SX98_.jpg",
+                    "num_pages": "152",
+                    "work": {
+                        "id": "60493489"
+                    },
+                    "isbn": "1783784458",
+                    "isbn13": "9781783784455",
+                    "average_rating": "3.58",
+                    "ratings_count": "32522",
+                    "publication_year": "2018",
+                    "publication_month": "9",
+                    "publication_day": "20",
+                    "authors": {
+                        "author": {
+                            "id": "703374",
+                            "name": "Sarah Moss",
+                            "link": "https://www.goodreads.com/author/show/703374.Sarah_Moss"
+                        }
+                    }
+                },
+                {
+                    "id": "37969723",
+                    "title": "The Silence of the Girls",
+                    "title_without_series": "The Silence of the Girls",
+                    "link": "https://www.goodreads.com/book/show/37969723-the-silence-of-the-girls",
+                    "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1519448688l/37969723._SY75_.jpg",
+                    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1519448688l/37969723._SX98_.jpg",
+                    "num_pages": "291",
+                    "work": {
+                        "id": "59693763"
+                    },
+                    "isbn": "0385544219",
+                    "isbn13": "9780385544214",
+                    "average_rating": "3.58",
+                    "ratings_count": "32522",
+                    "publication_year": "2018",
+                    "publication_month": "9",
+                    "publication_day": "4",
+                    "authors": {
+                        "author": {
+                            "id": "4000",
+                            "name": "Pat Barker",
+                            "link": "https://www.goodreads.com/author/show/4000.Pat_Barker"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "add_ons": {
+        "cover": {
+            "colors": [
+                "#d95c76",
+                "#251d1b",
+                "#f0af8a",
+                "#814647"
+            ],
+            "weights": [
+                0.41,
+                0.17,
+                0.28,
+                0.15
+            ]
+        }
+    }
+}

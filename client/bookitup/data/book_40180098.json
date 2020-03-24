@@ -37,19 +37,19 @@
             },
             "reviews_count": {
                 "@type": "integer",
-                "#text": "184463"
+                "#text": "187697"
             },
             "ratings_sum": {
                 "@type": "integer",
-                "#text": "181737"
+                "#text": "186216"
             },
             "ratings_count": {
                 "@type": "integer",
-                "#text": "43473"
+                "#text": "44556"
             },
             "text_reviews_count": {
                 "@type": "integer",
-                "#text": "7119"
+                "#text": "7289"
             },
             "original_publication_year": {
                 "@type": "integer",
@@ -69,7 +69,7 @@
                 "@nil": "true"
             },
             "media_type": "book",
-            "rating_dist": "5:20368|4:13848|3:6634|2:1980|1:643|total:43473",
+            "rating_dist": "5:20856|4:14190|3:6818|2:2030|1:662|total:44556",
             "desc_user_id": {
                 "@type": "integer",
                 "#text": "4490537"
@@ -87,8 +87,8 @@
         "num_pages": "502",
         "format": "Paperback",
         "edition_information": null,
-        "ratings_count": "20455",
-        "text_reviews_count": "3582",
+        "ratings_count": "21196",
+        "text_reviews_count": "3708",
         "url": "https://www.goodreads.com/book/show/40180098-the-overstory",
         "link": "https://www.goodreads.com/book/show/40180098-the-overstory",
         "authors": {
@@ -106,8 +106,8 @@
                 },
                 "link": "https://www.goodreads.com/author/show/11783.Richard_Powers",
                 "average_rating": "3.98",
-                "ratings_count": "73783",
-                "text_reviews_count": "11242"
+                "ratings_count": "74947",
+                "text_reviews_count": "11422"
             }
         },
         "reviews_widget": "<style>\n  #goodreads-widget {\n    font-family: georgia, serif;\n    padding: 18px 0;\n    width:565px;\n  }\n  #goodreads-widget h1 {\n    font-weight:normal;\n    font-size: 16px;\n    border-bottom: 1px solid #BBB596;\n    margin-bottom: 0;\n  }\n  #goodreads-widget a {\n    text-decoration: none;\n    color:#660;\n  }\n  iframe{\n    background-color: #fff;\n  }\n  #goodreads-widget a:hover { text-decoration: underline; }\n  #goodreads-widget a:active {\n    color:#660;\n  }\n  #gr_footer {\n    width: 100%;\n    border-top: 1px solid #BBB596;\n    text-align: right;\n  }\n  #goodreads-widget .gr_branding{\n    color: #382110;\n    font-size: 11px;\n    text-decoration: none;\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  }\n</style>\n<div id=\"goodreads-widget\">\n  <div id=\"gr_header\"><h1><a rel=\"nofollow\" href=\"https://www.goodreads.com/book/show/40180098-the-overstory\">The Overstory Reviews</a></h1></div>\n  <iframe id=\"the_iframe\" src=\"https://www.goodreads.com/api/reviews_widget_iframe?did=DEVELOPER_ID&amp;format=html&amp;isbn=039335668X&amp;links=660&amp;min_rating=&amp;review_back=fff&amp;stars=000&amp;text=000\" width=\"565\" height=\"400\" frameborder=\"0\"></iframe>\n  <div id=\"gr_footer\">\n    <a class=\"gr_branding\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" href=\"https://www.goodreads.com/book/show/40180098-the-overstory?utm_medium=api&amp;utm_source=reviews_widget\">Reviews from Goodreads.com</a>\n  </div>\n</div>",
@@ -115,51 +115,51 @@
             "shelf": [
                 {
                     "@name": "to-read",
-                    "@count": "108326"
+                    "@count": "109622"
                 },
                 {
                     "@name": "currently-reading",
-                    "@count": "22010"
+                    "@count": "22627"
                 },
                 {
                     "@name": "fiction",
-                    "@count": "1756"
+                    "@count": "1793"
                 },
                 {
                     "@name": "favorites",
-                    "@count": "411"
+                    "@count": "421"
                 },
                 {
                     "@name": "book-club",
-                    "@count": "331"
+                    "@count": "338"
                 },
                 {
                     "@name": "nature",
-                    "@count": "301"
+                    "@count": "307"
                 },
                 {
                     "@name": "literary-fiction",
-                    "@count": "201"
+                    "@count": "206"
                 },
                 {
                     "@name": "pulitzer",
-                    "@count": "196"
+                    "@count": "197"
                 },
                 {
                     "@name": "environment",
-                    "@count": "171"
+                    "@count": "170"
                 },
                 {
                     "@name": "contemporary",
-                    "@count": "144"
+                    "@count": "154"
                 },
                 {
                     "@name": "owned",
-                    "@count": "130"
+                    "@count": "134"
                 },
                 {
                     "@name": "novels",
-                    "@count": "128"
+                    "@count": "129"
                 },
                 {
                     "@name": "pulitzer-prize",
@@ -167,7 +167,7 @@
                 },
                 {
                     "@name": "library",
-                    "@count": "116"
+                    "@count": "120"
                 },
                 {
                     "@name": "read-in-2019",
@@ -175,39 +175,39 @@
                 },
                 {
                     "@name": "abandoned",
-                    "@count": "108"
+                    "@count": "107"
                 },
                 {
                     "@name": "books-i-own",
-                    "@count": "99"
+                    "@count": "100"
                 },
                 {
                     "@name": "did-not-finish",
-                    "@count": "93"
+                    "@count": "94"
                 },
                 {
                     "@name": "contemporary-fiction",
-                    "@count": "91"
+                    "@count": "94"
                 },
                 {
                     "@name": "literature",
+                    "@count": "93"
+                },
+                {
+                    "@name": "to-buy",
                     "@count": "90"
                 },
                 {
                     "@name": "dnf",
-                    "@count": "87"
-                },
-                {
-                    "@name": "to-buy",
-                    "@count": "87"
+                    "@count": "88"
                 },
                 {
                     "@name": "kindle",
-                    "@count": "82"
+                    "@count": "85"
                 },
                 {
                     "@name": "historical-fiction",
-                    "@count": "75"
+                    "@count": "76"
                 },
                 {
                     "@name": "audiobook",
@@ -219,50 +219,50 @@
                 },
                 {
                     "@name": "novel",
-                    "@count": "65"
+                    "@count": "66"
                 },
                 {
                     "@name": "read-2019",
                     "@count": "64"
                 },
                 {
+                    "@name": "didn-t-finish",
+                    "@count": "63"
+                },
+                {
                     "@name": "audiobooks",
                     "@count": "63"
                 },
                 {
-                    "@name": "didn-t-finish",
+                    "@name": "bookclub",
                     "@count": "61"
                 },
                 {
-                    "@name": "bookclub",
-                    "@count": "59"
+                    "@name": "audio",
+                    "@count": "58"
                 },
                 {
-                    "@name": "audio",
-                    "@count": "57"
+                    "@name": "pulitzer-prize-winners",
+                    "@count": "55"
+                },
+                {
+                    "@name": "literary",
+                    "@count": "55"
                 },
                 {
                     "@name": "to-read-fiction",
                     "@count": "55"
                 },
                 {
-                    "@name": "pulitzer-prize-winners",
-                    "@count": "54"
-                },
-                {
                     "@name": "2019-books",
                     "@count": "54"
                 },
                 {
-                    "@name": "literary",
-                    "@count": "54"
+                    "@name": "adult-fiction",
+                    "@count": "52"
                 },
                 {
                     "@name": "book-group",
-                    "@count": "51"
-                },
-                {
-                    "@name": "adult-fiction",
                     "@count": "51"
                 },
                 {
@@ -271,7 +271,11 @@
                 },
                 {
                     "@name": "maybe",
-                    "@count": "48"
+                    "@count": "47"
+                },
+                {
+                    "@name": "american",
+                    "@count": "45"
                 },
                 {
                     "@name": "trees",
@@ -279,18 +283,18 @@
                 },
                 {
                     "@name": "adult",
-                    "@count": "43"
-                },
-                {
-                    "@name": "american",
-                    "@count": "43"
+                    "@count": "44"
                 },
                 {
                     "@name": "non-fiction",
-                    "@count": "42"
+                    "@count": "43"
                 },
                 {
                     "@name": "environmental",
+                    "@count": "43"
+                },
+                {
+                    "@name": "audible",
                     "@count": "42"
                 },
                 {
@@ -302,35 +306,39 @@
                     "@count": "42"
                 },
                 {
-                    "@name": "audible",
-                    "@count": "41"
-                },
-                {
                     "@name": "man-booker-2018",
                     "@count": "39"
+                },
+                {
+                    "@name": "pulitzer-winners",
+                    "@count": "38"
+                },
+                {
+                    "@name": "ecology",
+                    "@count": "37"
                 },
                 {
                     "@name": "wish-list",
                     "@count": "37"
                 },
                 {
-                    "@name": "pulitzer-winners",
+                    "@name": "read-in-2020",
                     "@count": "36"
                 },
                 {
-                    "@name": "ecology",
-                    "@count": "35"
+                    "@name": "21st-century",
+                    "@count": "36"
                 },
                 {
                     "@name": "ebook",
-                    "@count": "35"
+                    "@count": "36"
                 },
                 {
                     "@name": "general-fiction",
-                    "@count": "35"
+                    "@count": "36"
                 },
                 {
-                    "@name": "read-in-2020",
+                    "@name": "pulitzers",
                     "@count": "34"
                 },
                 {
@@ -338,7 +346,7 @@
                     "@count": "34"
                 },
                 {
-                    "@name": "pulitzers",
+                    "@name": "2020-reading-list",
                     "@count": "33"
                 },
                 {
@@ -346,7 +354,7 @@
                     "@count": "33"
                 },
                 {
-                    "@name": "21st-century",
+                    "@name": "american-literature",
                     "@count": "32"
                 },
                 {
@@ -354,19 +362,11 @@
                     "@count": "32"
                 },
                 {
-                    "@name": "fiction-to-read",
-                    "@count": "31"
-                },
-                {
-                    "@name": "american-literature",
-                    "@count": "31"
-                },
-                {
                     "@name": "2018-releases",
                     "@count": "31"
                 },
                 {
-                    "@name": "2020-reading-list",
+                    "@name": "2020-books",
                     "@count": "30"
                 },
                 {
@@ -382,16 +382,16 @@
                     "@count": "29"
                 },
                 {
+                    "@name": "fiction-to-read",
+                    "@count": "29"
+                },
+                {
                     "@name": "pulitzer-fiction",
                     "@count": "28"
                 },
                 {
-                    "@name": "2020-books",
-                    "@count": "27"
-                },
-                {
                     "@name": "fantasy",
-                    "@count": "27"
+                    "@count": "28"
                 },
                 {
                     "@name": "booker",
@@ -406,16 +406,16 @@
                     "@count": "24"
                 },
                 {
+                    "@name": "booker-prize",
+                    "@count": "24"
+                },
+                {
                     "@name": "next-up",
                     "@count": "24"
                 },
                 {
                     "@name": "usa",
                     "@count": "24"
-                },
-                {
-                    "@name": "2020-tbr",
-                    "@count": "23"
                 },
                 {
                     "@name": "pulitzer-prize-winner",
@@ -430,8 +430,12 @@
                     "@count": "23"
                 },
                 {
-                    "@name": "booker-prize",
+                    "@name": "award-winner",
                     "@count": "23"
+                },
+                {
+                    "@name": "2020-tbr",
+                    "@count": "22"
                 },
                 {
                     "@name": "gave-up-on",
@@ -446,10 +450,6 @@
                     "@count": "22"
                 },
                 {
-                    "@name": "award-winner",
-                    "@count": "21"
-                },
-                {
                     "@name": "audio-book",
                     "@count": "21"
                 },
@@ -458,7 +458,15 @@
                     "@count": "20"
                 },
                 {
+                    "@name": "on-my-shelf",
+                    "@count": "20"
+                },
+                {
                     "@name": "never-finished",
+                    "@count": "20"
+                },
+                {
+                    "@name": "nature-writing",
                     "@count": "20"
                 },
                 {
@@ -474,15 +482,7 @@
                     "@count": "19"
                 },
                 {
-                    "@name": "on-my-shelf",
-                    "@count": "19"
-                },
-                {
                     "@name": "e-book",
-                    "@count": "19"
-                },
-                {
-                    "@name": "up-next",
                     "@count": "19"
                 },
                 {
@@ -498,10 +498,6 @@
                     "@count": "19"
                 },
                 {
-                    "@name": "nature-writing",
-                    "@count": "19"
-                },
-                {
                     "@name": "2020-reads",
                     "@count": "18"
                 },
@@ -511,6 +507,10 @@
                 },
                 {
                     "@name": "man-booker-prize",
+                    "@count": "18"
+                },
+                {
+                    "@name": "up-next",
                     "@count": "18"
                 }
             ]
@@ -603,7 +603,7 @@
                     "isbn": "0062963678",
                     "isbn13": "9780062963673",
                     "average_rating": "4.18",
-                    "ratings_count": "43473",
+                    "ratings_count": "44556",
                     "publication_year": "2019",
                     "publication_month": "9",
                     "publication_day": "24",
@@ -629,7 +629,7 @@
                     "isbn": "0525562028",
                     "isbn13": "9780525562023",
                     "average_rating": "4.18",
-                    "ratings_count": "43473",
+                    "ratings_count": "44556",
                     "publication_year": "2019",
                     "publication_month": "6",
                     "publication_day": "4",
@@ -655,7 +655,7 @@
                     "isbn": "0525520376",
                     "isbn13": "9780525520375",
                     "average_rating": "4.18",
-                    "ratings_count": "43473",
+                    "ratings_count": "44556",
                     "publication_year": "2018",
                     "publication_month": "6",
                     "publication_day": "5",
@@ -681,7 +681,7 @@
                     "isbn": "0525521429",
                     "isbn13": "9780525521426",
                     "average_rating": "4.18",
-                    "ratings_count": "43473",
+                    "ratings_count": "44556",
                     "publication_year": "2018",
                     "publication_month": "9",
                     "publication_day": "18",
@@ -707,7 +707,7 @@
                     "isbn": null,
                     "isbn13": null,
                     "average_rating": "4.18",
-                    "ratings_count": "43473",
+                    "ratings_count": "44556",
                     "publication_year": null,
                     "publication_month": null,
                     "publication_day": null,
@@ -733,7 +733,7 @@
                     "isbn": "0399590595",
                     "isbn13": "9780399590597",
                     "average_rating": "4.18",
-                    "ratings_count": "43473",
+                    "ratings_count": "44556",
                     "publication_year": "2019",
                     "publication_month": "9",
                     "publication_day": "24",
@@ -759,7 +759,7 @@
                     "isbn": "0812996542",
                     "isbn13": "9780812996548",
                     "average_rating": "4.18",
-                    "ratings_count": "43473",
+                    "ratings_count": "44556",
                     "publication_year": "2019",
                     "publication_month": "10",
                     "publication_day": "15",
@@ -785,7 +785,7 @@
                     "isbn": null,
                     "isbn13": null,
                     "average_rating": "4.18",
-                    "ratings_count": "43473",
+                    "ratings_count": "44556",
                     "publication_year": "2019",
                     "publication_month": "5",
                     "publication_day": "14",
@@ -794,32 +794,6 @@
                             "id": "18163138",
                             "name": "Julia  Phillips",
                             "link": "https://www.goodreads.com/author/show/18163138.Julia_Phillips"
-                        }
-                    }
-                },
-                {
-                    "id": "36047860",
-                    "title": "Milkman",
-                    "title_without_series": "Milkman",
-                    "link": "https://www.goodreads.com/book/show/36047860-milkman",
-                    "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1526985855l/36047860._SY75_.jpg",
-                    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1526985855l/36047860._SX98_.jpg",
-                    "num_pages": "352",
-                    "work": {
-                        "id": "57622946"
-                    },
-                    "isbn": "0571338763",
-                    "isbn13": "9780571338764",
-                    "average_rating": "4.18",
-                    "ratings_count": "43473",
-                    "publication_year": "2018",
-                    "publication_month": "5",
-                    "publication_day": "15",
-                    "authors": {
-                        "author": {
-                            "id": "396165",
-                            "name": "Anna Burns",
-                            "link": "https://www.goodreads.com/author/show/396165.Anna_Burns"
                         }
                     }
                 },
@@ -837,7 +811,7 @@
                     "isbn": "0241364906",
                     "isbn13": "9780241364901",
                     "average_rating": "4.18",
-                    "ratings_count": "43473",
+                    "ratings_count": "44556",
                     "publication_year": "2019",
                     "publication_month": "5",
                     "publication_day": "2",
@@ -850,28 +824,28 @@
                     }
                 },
                 {
-                    "id": "42975172",
-                    "title": "The Testaments (The Handmaid's Tale, #2)",
-                    "title_without_series": "The Testaments",
-                    "link": "https://www.goodreads.com/book/show/42975172-the-testaments",
-                    "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1549292344l/42975172._SY75_.jpg",
-                    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1549292344l/42975172._SX98_.jpg",
-                    "num_pages": "422",
+                    "id": "36047860",
+                    "title": "Milkman",
+                    "title_without_series": "Milkman",
+                    "link": "https://www.goodreads.com/book/show/36047860-milkman",
+                    "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1526985855l/36047860._SY75_.jpg",
+                    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1526985855l/36047860._SX98_.jpg",
+                    "num_pages": "352",
                     "work": {
-                        "id": "66802198"
+                        "id": "57622946"
                     },
-                    "isbn": "0385543786",
-                    "isbn13": "9780385543781",
+                    "isbn": "0571338763",
+                    "isbn13": "9780571338764",
                     "average_rating": "4.18",
-                    "ratings_count": "43473",
-                    "publication_year": "2019",
-                    "publication_month": "9",
-                    "publication_day": "10",
+                    "ratings_count": "44556",
+                    "publication_year": "2018",
+                    "publication_month": "5",
+                    "publication_day": "15",
                     "authors": {
                         "author": {
-                            "id": "3472",
-                            "name": "Margaret Atwood",
-                            "link": "https://www.goodreads.com/author/show/3472.Margaret_Atwood"
+                            "id": "396165",
+                            "name": "Anna Burns",
+                            "link": "https://www.goodreads.com/author/show/396165.Anna_Burns"
                         }
                     }
                 },
@@ -889,7 +863,7 @@
                     "isbn": "0374277788",
                     "isbn13": "9780374277789",
                     "average_rating": "4.18",
-                    "ratings_count": "43473",
+                    "ratings_count": "44556",
                     "publication_year": "2019",
                     "publication_month": "10",
                     "publication_day": "1",
@@ -898,6 +872,32 @@
                             "id": "73733",
                             "name": "Ben Lerner",
                             "link": "https://www.goodreads.com/author/show/73733.Ben_Lerner"
+                        }
+                    }
+                },
+                {
+                    "id": "42975172",
+                    "title": "The Testaments (The Handmaid's Tale, #2)",
+                    "title_without_series": "The Testaments",
+                    "link": "https://www.goodreads.com/book/show/42975172-the-testaments",
+                    "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1549292344l/42975172._SY75_.jpg",
+                    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1549292344l/42975172._SX98_.jpg",
+                    "num_pages": "422",
+                    "work": {
+                        "id": "66802198"
+                    },
+                    "isbn": "0385543786",
+                    "isbn13": "9780385543781",
+                    "average_rating": "4.18",
+                    "ratings_count": "44556",
+                    "publication_year": "2019",
+                    "publication_month": "9",
+                    "publication_day": "10",
+                    "authors": {
+                        "author": {
+                            "id": "3472",
+                            "name": "Margaret Atwood",
+                            "link": "https://www.goodreads.com/author/show/3472.Margaret_Atwood"
                         }
                     }
                 },
@@ -915,7 +915,7 @@
                     "isbn": "1250309883",
                     "isbn13": "9781250309884",
                     "average_rating": "4.18",
-                    "ratings_count": "43473",
+                    "ratings_count": "44556",
                     "publication_year": "2019",
                     "publication_month": "4",
                     "publication_day": "9",
@@ -924,32 +924,6 @@
                             "id": "76672",
                             "name": "Susan Choi",
                             "link": "https://www.goodreads.com/author/show/76672.Susan_Choi"
-                        }
-                    }
-                },
-                {
-                    "id": "45304101",
-                    "title": "The Great Believers",
-                    "title_without_series": "The Great Believers",
-                    "link": "https://www.goodreads.com/book/show/45304101-the-great-believers",
-                    "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png",
-                    "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
-                    "num_pages": "448",
-                    "work": {
-                        "id": "58531414"
-                    },
-                    "isbn": "073522353X",
-                    "isbn13": "9780735223530",
-                    "average_rating": "4.18",
-                    "ratings_count": "43473",
-                    "publication_year": "2019",
-                    "publication_month": "6",
-                    "publication_day": "4",
-                    "authors": {
-                        "author": {
-                            "id": "3134707",
-                            "name": "Rebecca Makkai",
-                            "link": "https://www.goodreads.com/author/show/3134707.Rebecca_Makkai"
                         }
                     }
                 },
@@ -967,7 +941,7 @@
                     "isbn": "1984822179",
                     "isbn13": "9781984822178",
                     "average_rating": "4.18",
-                    "ratings_count": "43473",
+                    "ratings_count": "44556",
                     "publication_year": null,
                     "publication_month": null,
                     "publication_day": null,
@@ -980,28 +954,28 @@
                     }
                 },
                 {
-                    "id": "40164365",
-                    "title": "The Friend",
-                    "title_without_series": "The Friend",
-                    "link": "https://www.goodreads.com/book/show/40164365-the-friend",
-                    "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1544364669l/40164365._SY75_.jpg",
-                    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1544364669l/40164365._SX98_.jpg",
-                    "num_pages": "224",
+                    "id": "45304101",
+                    "title": "The Great Believers",
+                    "title_without_series": "The Great Believers",
+                    "link": "https://www.goodreads.com/book/show/45304101-the-great-believers",
+                    "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png",
+                    "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+                    "num_pages": "448",
                     "work": {
-                        "id": "56847766"
+                        "id": "58531414"
                     },
-                    "isbn": "0735219451",
-                    "isbn13": "9780735219458",
+                    "isbn": "073522353X",
+                    "isbn13": "9780735223530",
                     "average_rating": "4.18",
-                    "ratings_count": "43473",
+                    "ratings_count": "44556",
                     "publication_year": "2019",
-                    "publication_month": "2",
-                    "publication_day": "5",
+                    "publication_month": "6",
+                    "publication_day": "4",
                     "authors": {
                         "author": {
-                            "id": "6633",
-                            "name": "Sigrid Nunez",
-                            "link": "https://www.goodreads.com/author/show/6633.Sigrid_Nunez"
+                            "id": "3134707",
+                            "name": "Rebecca Makkai",
+                            "link": "https://www.goodreads.com/author/show/3134707.Rebecca_Makkai"
                         }
                     }
                 },
@@ -1019,7 +993,7 @@
                     "isbn": "0525510877",
                     "isbn13": "9780525510871",
                     "average_rating": "4.18",
-                    "ratings_count": "43473",
+                    "ratings_count": "44556",
                     "publication_year": "2019",
                     "publication_month": "6",
                     "publication_day": "18",
@@ -1028,6 +1002,32 @@
                             "id": "7235807",
                             "name": "Taffy Brodesser-Akner",
                             "link": "https://www.goodreads.com/author/show/7235807.Taffy_Brodesser_Akner"
+                        }
+                    }
+                },
+                {
+                    "id": "40164365",
+                    "title": "The Friend",
+                    "title_without_series": "The Friend",
+                    "link": "https://www.goodreads.com/book/show/40164365-the-friend",
+                    "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1544364669l/40164365._SY75_.jpg",
+                    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1544364669l/40164365._SX98_.jpg",
+                    "num_pages": "224",
+                    "work": {
+                        "id": "56847766"
+                    },
+                    "isbn": "0735219451",
+                    "isbn13": "9780735219458",
+                    "average_rating": "4.18",
+                    "ratings_count": "44556",
+                    "publication_year": "2019",
+                    "publication_month": "2",
+                    "publication_day": "5",
+                    "authors": {
+                        "author": {
+                            "id": "6633",
+                            "name": "Sigrid Nunez",
+                            "link": "https://www.goodreads.com/author/show/6633.Sigrid_Nunez"
                         }
                     }
                 },
@@ -1045,7 +1045,7 @@
                     "isbn": "059313267X",
                     "isbn13": "9780593132678",
                     "average_rating": "4.18",
-                    "ratings_count": "43473",
+                    "ratings_count": "44556",
                     "publication_year": "2019",
                     "publication_month": "8",
                     "publication_day": "13",
@@ -1057,6 +1057,22 @@
                         }
                     }
                 }
+            ]
+        }
+    },
+    "add_ons": {
+        "cover": {
+            "colors": [
+                "#3e220b",
+                "#b77a2c",
+                "#bbb89f",
+                "#7f4a13"
+            ],
+            "weights": [
+                0.3,
+                0.21,
+                0.11,
+                0.38
             ]
         }
     }

@@ -4,10 +4,12 @@ class Boxes {
 
     // Configs
     w = 375;
-    h = 375;
+    h = this.w * 3 / 2;
 
     constructor(_data, _ref) {
         this.data = JSON.parse(JSON.stringify(_data));
+        console.log('! Data !')
+        console.log(this.data)
         this.parent = _ref;
 
         this.initVis()
@@ -145,15 +147,16 @@ class Boxes {
             .attr('width', d => vis.ratingsCountScale(d))
             .attr('height', d => vis.ratingsCountScale(d));
 
-
-
-
+        // Build frame
+        vis.buildFrame();
 
         // :^)
         vis.wrangleData();
-        console.log(vis.data.book)
     }
 
+    /*
+    wrangleData
+     */
     wrangleData() {
         // Get this vis
         const vis = this;
@@ -164,9 +167,54 @@ class Boxes {
 
     }
 
+    /*
+    updateVis
+     */
     updateVis() {
         // Get this vis
         const vis = this;
+
+    }
+
+    /*
+    buildFrame
+     */
+    buildFrame() {
+        // Define this
+        const vis = this;
+
+        // Config
+        const smallSd = 10;
+
+        // Capture colors
+        vis.cover = vis.data.add_ons.cover;
+
+        vis.frameG = vis.svg.append('g')
+            .attr('class', 'frameG');
+        vis.frameG.append('rect')
+            .attr('x', smallSd * 2)
+            .attr('y', smallSd)
+            .attr('width', vis.w - smallSd * 4)
+            .attr('height', smallSd)
+            .attr('fill', vis.cover.colors[0]);
+        vis.frameG.append('rect')
+            .attr('x', vis.w - smallSd * 2)
+            .attr('y', smallSd * 2)
+            .attr('width', smallSd)
+            .attr('height', vis.h - smallSd * 4)
+            .attr('fill', vis.cover.colors[1]);
+        vis.frameG.append('rect')
+            .attr('x', smallSd * 2)
+            .attr('y', vis.h - smallSd * 2)
+            .attr('width', vis.w - smallSd * 4)
+            .attr('height', smallSd)
+            .attr('fill', vis.cover.colors[2]);
+        vis.frameG.append('rect')
+            .attr('x', smallSd)
+            .attr('y', smallSd * 2)
+            .attr('width', smallSd)
+            .attr('height', vis.h - smallSd * 4)
+            .attr('fill', vis.cover.colors[3]);
 
     }
 

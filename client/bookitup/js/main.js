@@ -1,13 +1,14 @@
 'use strict';
 
 // radials
-let orderedRadialZonaK, orderedRadialJeffB, orderedRadialJaredJ;
-let radialZonaK, radialJeffB, radialJaredJ;
-let roseZonaK, roseJeffB, roseJaredJ;
+let orderedRadialZonaK, orderedRadialJeffB, orderedRadialJaredJ, orderedRadialNingC;
+let radialZonaK, radialJeffB, radialJaredJ, radialNingC;
+let roseZonaK, roseJeffB, roseJaredJ, roseNingC;
 
 let _hierarchy;
 
 let boxes40180098;
+let boxes36047860;
 
 // Load shared general data
 d3.json('data/genre_hierarchy.json').then(d => {
@@ -35,6 +36,15 @@ d3.json('data/genre_hierarchy.json').then(d => {
         roseJeffB = new Rose(data2, 'roseJeffB');
     }).catch(err => console.log(err));
 
+    // Test : Ning Chen
+    d3.json(`data/scrapy-NingChen.json`).then(d => {
+        const data1 = d;
+        const data2 = JSON.parse(JSON.stringify(d));
+        orderedRadialNingC = new OrderedRadial(data1, 'orderedRadialNingC');
+        radialNingC = new Radial(data1, 'radialNingC');
+        roseNingC = new Rose(data2, 'roseNingC');
+    }).catch(err => console.log(err));
+
     // Test : Jared Jessup
     d3.json(`data/scrapy-JaredJessup.json`).then(d => {
         const data1 = d;
@@ -51,6 +61,9 @@ d3.json('data/genre_hierarchy.json').then(d => {
 d3.json('data/book_40180098.json').then(d => {
     boxes40180098 = new Boxes(d, 'boxes40180098');
 }).catch(err => console.log(err));
+d3.json('data/book_36047860.json').then(d => {
+    boxes36047860 = new Boxes(d, 'boxes36047860');
+}).catch(err => console.log(err));
 
 /*
  sortIt
@@ -60,6 +73,8 @@ function sortIt(passthru) {
     roseZonaK.sortIt(passthru.value);
     radialJeffB.sortIt(passthru.value);
     roseJeffB.sortIt(passthru.value);
+    radialNingC.sortIt(passthru.value);
+    roseNingC.sortIt(passthru.value);
     radialJaredJ.sortIt(passthru.value);
     roseJaredJ.sortIt(passthru.value);
 }
