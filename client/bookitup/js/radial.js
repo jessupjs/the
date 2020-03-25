@@ -90,10 +90,29 @@ class Radial {
         vis.coordScale = d3.scaleLinear()
             .range([Math.PI, -Math.PI]);
 
+        // Build contourG
+        vis.contoursG = vis.g.append('g')
+            .attr('class', 'contoursG')
+            .style('transform', `translate(${vis.gW / 2 - vis.innerRadius}px, ${vis.gH / 2 - vis.innerRadius}px)`);
+        vis.contoursG.append('defs')
+            .append('clipPath')
+            .attr('id', 'contour-clip')
+            .append('circle')
+            .attr('cx', vis.innerRadius)
+            .attr('cy', vis.innerRadius)
+            .attr('r', vis.innerRadius);
+
         // Build geoG
         vis.geosG = vis.g.append('g')
             .attr('class', 'geosG')
             .style('transform', `translate(${vis.gW / 2}px, ${vis.gH / 2}px)`);
+
+        // Init contour
+        vis.contours = d3.contourDensity();
+
+        // Init colorScale
+        vis.colorScale = d3.scaleLinear()
+            .range(['rgba(0, 0, 0, 1)', 'rgba(255, 255, 255, 1)']);
 
         // Config
         vis.dotG = 3;
@@ -164,6 +183,9 @@ class Radial {
         // Get this vis
         const vis = this;
 
+        // Centroid collection
+        vis.centroids = [];
+
         // Draw radial area path
         vis.rAreaG.selectAll('.areaPath')
             .data([{area: vis.genreData}])
@@ -225,22 +247,26 @@ class Radial {
                         // Get center of polygon
                         const centroid = d3.polygonCentroid(coords);
                         if (centroid[0] && centroid[1]) {
+                            centroid[0] = Math.round(centroid[0]);
+                            centroid[1] = Math.round(centroid[1]);
                             // Draw circ
                             geoG.append('circle')
                                 .attr('class', 'geoCirc')
                                 .attr('r', vis.dotG)
                                 .attr('cx', centroid[0])
                                 .attr('cy', centroid[1]);
+                            vis.centroids.push({x: centroid[0], y: centroid[1]});
                         } else {
                             // Calc circ ave coords
-                            const xAve = coords.map(d => d[0]).reduce((a, c) => a + c) / coords.length;
-                            const yAve = coords.map(d => d[1]).reduce((a, c) => a + c) / coords.length;
+                            const xAve = Math.round(coords.map(d => d[0]).reduce((a, c) => a + c) / coords.length);
+                            const yAve = Math.round(coords.map(d => d[1]).reduce((a, c) => a + c) / coords.length);
                             // Draw circ
                             geoG.append('circle')
                                 .attr('class', 'geoCirc')
                                 .attr('r', vis.dotG)
                                 .attr('cx', xAve)
                                 .attr('cy', yAve);
+                            vis.centroids.push({x: xAve, y: yAve});
                         }
 
                     }),
@@ -283,6 +309,7 @@ class Radial {
                                 .transition()
                                 .attr('cx', centroid[0])
                                 .attr('cy', centroid[1]);
+                            vis.centroids.push({x: centroid[0], y: centroid[1]});
                         } else {
                             // Calc circ ave coords
                             const xAve = coords.map(d => d[0]).reduce((a, c) => a + c) / coords.length;
@@ -292,6 +319,7 @@ class Radial {
                                 .transition()
                                 .attr('cx', xAve)
                                 .attr('cy', yAve);
+                            vis.centroids.push({x: xAve, y: yAve});
                         }
 
                     })
@@ -313,7 +341,10 @@ class Radial {
                     .classed('geoCircSel', true);
                 g.selectAll('.geoNode')
                     .classed('geoNodeSel', true);
-            })
+            });
+
+        // TODO
+        vis.buildContour();
     }
 
     handleHandle() {
@@ -339,5 +370,65 @@ class Radial {
         vis.wrangleData();
     }
 
+    /*
+    buildContour
+     */
+    buildContour() {
+        // Define this
+        const vis = this;
+
+        // Vars
+        const wh = vis.innerRadius * 2;
+
+        // Get coords
+        const results = vis.contours
+            .x(d => d.x + vis.innerRadius)
+            .y(d => d.y + vis.innerRadius)
+            .size([wh, wh])
+            .bandwidth(12)
+            .thresholds(6)
+            (vis.centroids);
+        vis.colorScale.domain([0, results.length - 1]);
+
+        // Draw
+        vis.contoursG.selectAll('.contourG')
+            .data(results)
+            .join(
+                enter => enter
+                    .append('g')
+                    .attr('class', 'contourG')
+                    .attr('clip-path', 'url(#contour-clip)')
+                    .each(function(d, i) {
+                        // Define
+                        const contourG = d3.select(this);
+                        // Append shape
+                        contourG.append('path')
+                            .attr('d', d3.geoPath())
+                            .attr('stroke', 'rgba(0, 0, 0, 1)')
+                            .attr('stroke-width', 0.5)
+                            .attr('fill', 'none')
+                            //.attr('fill', vis.colorScale(i));
+                    }),
+                update => update
+                    .each(function(d, i) {
+                        // Define
+                        const contourG = d3.select(this);
+                        // Append shape
+                        contourG.select('path')
+                            .transition()
+                            .attr('d', d3.geoPath())
+                        //.attr('fill', vis.colorScale(i));
+                    })
+            );
+
+
+    }
+
 
 }
+
+/*
+Ref.
+https://github.com/d3/d3-contour/blob/v1.3.2/README.md#contours
+https://observablehq.com/@d3/density-contours?collection=@d3/d3-contour
+ */
