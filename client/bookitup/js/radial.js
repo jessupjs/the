@@ -385,8 +385,8 @@ class Radial {
             .x(d => d.x + vis.innerRadius)
             .y(d => d.y + vis.innerRadius)
             .size([wh, wh])
-            .bandwidth(12)
-            .thresholds(6)
+            .bandwidth(20)
+            .thresholds(10)
             (vis.centroids);
         vis.colorScale.domain([0, results.length - 1]);
 
