@@ -1,0 +1,37 @@
+{
+  "name": "lensing-demo",
+  "version": "1.0.0",
+  "description": "#### Notes",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessupjs/lensing-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jessupjs/lensing-demo/issues"
+  },
+  "homepage": "https://github.com/jessupjs/lensing-demo#readme",
+  "dependencies": {
+    "lensing": "^1.0.1",
+    "openseadragon": "^2.4.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/preset-env": "^7.10.3",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
+    "file-loader": "^6.0.0",
+    "source-map-loader": "^1.0.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
