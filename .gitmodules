@@ -1,0 +1,3 @@
+[submodule "client/vcg/lensing-demo"]
+	path = client/vcg/lensing-demo
+	url = git@github.com:jessupjs/lensing-demo.git
