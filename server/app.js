@@ -26,10 +26,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/leapmotion', leapmotionRouter);
-app.use('/leaptutorial', express.static(path.join(__dirname, '../client/leaptutorial')));
 app.use('/vcg/lensing-demo', express.static(path.join(__dirname, '../client/vcg/lensing-demo/dist')));
 app.use('/vcg/nodes', express.static(path.join(__dirname, '../client/vcg/nodes')));
 app.use('/vcg/table2text', express.static(path.join(__dirname, '../client/vcg/table2text')));
+app.use('/rw-assignment', express.static(path.join(__dirname, '../client/rw-assignment')));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
